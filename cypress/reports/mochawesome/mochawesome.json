@@ -1,0 +1,181 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-09-16T06:15:23.037Z",
+    "end": "2025-09-16T06:17:47.723Z",
+    "duration": 144686,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "43cf29d9-6737-4c2c-9abf-0065c6bbcf86",
+      "title": "",
+      "fullFile": "cypress\\e2e\\accrediting.cy.js",
+      "file": "cypress\\e2e\\accrediting.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b3de42a9-696f-46a5-9f19-2b8a97657a29",
+          "title": "Accrediting Agency",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "TC_01- Accrediting Agency Management",
+              "fullTitle": "Accrediting Agency TC_01- Accrediting Agency Management",
+              "timedOut": null,
+              "duration": 48903,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "goToAccreditingAgency();\ncy.get(\".local-actions__item > .button\").click();\ncy.get('[name=\"title[0][value]\"]').type(\"Acer\" + acerName);\ncy.get('[name=\"citation_text[0][citation]\"]').type(\"XYZ Citation\");\ncy.get('[name=\"citation_text[0][text]\"]').type(\"Text Message\");\ncy.get('[name=\"citation_text_add_more\"]').click();\ncy.get('[name=\"citation_text[1][citation]\"]').type(\"ABC Citation 123\");\ncy.get('[name=\"op\"]').click();\ncy.get(\".messages-list__item\").should(\"be.visible\");",
+              "err": {},
+              "uuid": "ec405c30-ee31-4967-b267-31d5f95da5c3",
+              "parentUUID": "b3de42a9-696f-46a5-9f19-2b8a97657a29",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC_02- Edit Accrediting Agency",
+              "fullTitle": "Accrediting Agency TC_02- Edit Accrediting Agency",
+              "timedOut": null,
+              "duration": 26160,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "goToAccreditingAgency();\ncy.get('[name=\"title\"]').type(\"Acer\" + acerName);\ncy.get(\"#edit-actions\").click();\ncy.get(\":nth-child(1) > .views-field-operations > .dropbutton-wrapper > .dropbutton-widget > .dropbutton > .edit > a\").click();\ncy.get('[name=\"citation_text[0][citation]\"]').clear().type(\"XYZ Citation Edited\");\ncy.get('[name=\"citation_text_1_remove_button\"]').click();\ncy.get('[name=\"op\"]').click();",
+              "err": {},
+              "uuid": "a10c6609-ab2c-4eb6-bc20-93e7636052ab",
+              "parentUUID": "b3de42a9-696f-46a5-9f19-2b8a97657a29",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC_03 - Export Accrediting Agency",
+              "fullTitle": "Accrediting Agency TC_03 - Export Accrediting Agency",
+              "timedOut": null,
+              "duration": 22969,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "goToAccreditingAgency();\ncy.get(\"#edit-export-actions\").select(\"Acer\" + acerName);\ncy.get(\"#edit-export-submit\").click();",
+              "err": {},
+              "uuid": "9740b414-2b18-4be4-b752-974ccf8e90be",
+              "parentUUID": "b3de42a9-696f-46a5-9f19-2b8a97657a29",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC_04 - Import previously exported CSV",
+              "fullTitle": "Accrediting Agency TC_04 - Import previously exported CSV",
+              "timedOut": null,
+              "duration": 22154,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "goToAccreditingAgency();\ncy.get(\":nth-child(2) > .button\").click();\nconst filePath = `cypress/downloads/Acer${acerName}.csv`;\ncy.get('[name=\"files[csv_file]\"]').selectFile(filePath);\ncy.get(\"#edit-submit\").click();",
+              "err": {},
+              "uuid": "849e4475-8b91-4e24-b5f8-a876b4ca0f19",
+              "parentUUID": "b3de42a9-696f-46a5-9f19-2b8a97657a29",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC_05- Delete Accrediting Agency",
+              "fullTitle": "Accrediting Agency TC_05- Delete Accrediting Agency",
+              "timedOut": null,
+              "duration": 24171,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "goToAccreditingAgency();\ncy.get('[name=\"title\"]').type(\"Acer\" + acerName);\ncy.get(\"#edit-actions\").click();\ncy.get(\".edit > a\").click();\ncy.get(\"#edit-delete\").click();\ncy.get(\".ui-dialog-buttonset > .button--primary\").click();\ncy.get(\".messages-list__item\").should(\"be.visible\");",
+              "err": {},
+              "uuid": "db6be6b6-e29f-4b32-9b98-22319247ad27",
+              "parentUUID": "b3de42a9-696f-46a5-9f19-2b8a97657a29",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ec405c30-ee31-4967-b267-31d5f95da5c3",
+            "a10c6609-ab2c-4eb6-bc20-93e7636052ab",
+            "9740b414-2b18-4be4-b752-974ccf8e90be",
+            "849e4475-8b91-4e24-b5f8-a876b4ca0f19",
+            "db6be6b6-e29f-4b32-9b98-22319247ad27"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 144357,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.3.0"
+    }
+  }
+}

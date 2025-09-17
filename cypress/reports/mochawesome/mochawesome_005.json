@@ -1,0 +1,162 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-09-16T06:32:45.993Z",
+    "end": "2025-09-16T06:35:48.900Z",
+    "duration": 182907,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "25ddb521-0689-4af8-a772-5dc4de0bebd2",
+      "title": "",
+      "fullFile": "cypress\\e2e\\risk.cy.js",
+      "file": "cypress\\e2e\\risk.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "4c594f35-bbad-4594-bdeb-948888426f85",
+          "title": "Risk Management",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "TC_01 - Create Risk",
+              "fullTitle": "Risk Management TC_01 - Create Risk",
+              "timedOut": null,
+              "duration": 70314,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "goToRiskList();\ncy.contains(\"a\", \"Create New Risk\").click();\ncy.get(\"#edit-add-to-risk-table\").select(\"Yes\");\ncy.get(\"#edit-category\").select(\"E\");\ncy.get(\"#edit-hazard-risk-statement-0-value\").type(riskStatement);\ncy.get(\"#edit-risk-abbreviated-terms-0-value\").type(riskTerms);\ncy.get(\"#edit-type-of-risk\").select(\"Instrument Risk\");\ncy.get(\"#edit-submit\").click();\ncy.contains(riskStatement).should(\"be.visible\");",
+              "err": {},
+              "uuid": "80f94b0d-bfe9-4d49-8f35-c70364c3636c",
+              "parentUUID": "4c594f35-bbad-4594-bdeb-948888426f85",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC_02 - Edit Recently Created Risk",
+              "fullTitle": "Risk Management TC_02 - Edit Recently Created Risk",
+              "timedOut": null,
+              "duration": 35922,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "goToRiskList();\ncy.get(\"#edit-hazard-risk-statement\").type(riskStatement);\ncy.get(\"#edit-risk-abbreviated-terms\").type(riskTerms);\ncy.get(\"#edit-type-of-risk\").select(\"Instrument Risk\");\ncy.get(\"#edit-submit-cp-risk-admin\").click();\ncy.get(\".edit > a\").click();\ncy.get(\"#edit-hazard-risk-statement-0-value\").clear().type(`${riskStatement} - Edited`);\ncy.get(\"#edit-risk-abbreviated-terms-0-value\").clear().type(`${riskTerms} - Edited`);\ncy.get(\"#edit-submit\").click();\ncy.contains(`${riskStatement} - Edited`).should(\"be.visible\");",
+              "err": {},
+              "uuid": "0b699d71-27d7-4a1d-8d3a-e5f9637dd37d",
+              "parentUUID": "4c594f35-bbad-4594-bdeb-948888426f85",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC_03 - Delete Recently Edited Risk",
+              "fullTitle": "Risk Management TC_03 - Delete Recently Edited Risk",
+              "timedOut": null,
+              "duration": 39663,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "goToRiskList();\ncy.get(\"#edit-hazard-risk-statement\").type(riskStatement);\ncy.get(\"#edit-risk-abbreviated-terms\").type(riskTerms);\ncy.get(\"#edit-type-of-risk\").select(\"Instrument Risk\");\ncy.get(\"#edit-submit-cp-risk-admin\").click();\ncy.get(\".edit > a\").click();\ncy.get(\"#edit-delete\").click();\ncy.contains(\"button\", \"Delete\").click();",
+              "err": {},
+              "uuid": "4b13e55b-1ce5-4782-91ec-1197b43ec417",
+              "parentUUID": "4c594f35-bbad-4594-bdeb-948888426f85",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC_04 - Create Risk with All Fields",
+              "fullTitle": "Risk Management TC_04 - Create Risk with All Fields",
+              "timedOut": null,
+              "duration": 36467,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "goToRiskList();\ncy.contains(\"a\", \"Create New Risk\").click();\ncy.get(\"#edit-add-to-risk-table\").select(\"Yes\");\ncy.get(\"#edit-category\").select(\"E\");\ncy.get(\"#edit-hazard-risk-statement-0-value\").type(riskStatement + \" All\");\ncy.get(\"#edit-risk-abbreviated-terms-0-value\").type(riskTerms + \" All\");\ncy.get(\"#edit-type-of-risk\").select(\"Instrument Risk\");\ncy.get('[name=\"activity\"]').select(\"collection\");\ncy.get('input[data-drupal-selector=\"edit-qcp-ids-0-target-id\"]').should(\"be.visible\").clear().type(\"QCP\", {\n  delay: 100\n}).wait(2000);\ncy.get(\".ui-menu-item-wrapper\").contains(\"QCP\").click();\ncy.get('[name=\"op\"]').click();\ncy.contains(riskStatement).should(\"be.visible\");",
+              "err": {},
+              "uuid": "9eb925fe-e9f3-4e79-8537-2c1b5d886a86",
+              "parentUUID": "4c594f35-bbad-4594-bdeb-948888426f85",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "80f94b0d-bfe9-4d49-8f35-c70364c3636c",
+            "0b699d71-27d7-4a1d-8d3a-e5f9637dd37d",
+            "4b13e55b-1ce5-4782-91ec-1197b43ec417",
+            "9eb925fe-e9f3-4e79-8537-2c1b5d886a86"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 182366,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.3.0"
+    }
+  }
+}

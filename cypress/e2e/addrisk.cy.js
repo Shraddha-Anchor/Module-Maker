@@ -10,8 +10,8 @@ describe("Add Risk Management", () => {
   const Analystes = `Test Analystes ${randomNum}`;
 
   beforeEach(() => {
-    cy.visit("https://modulemakerdev.pro-qcp.com/user/login");
-    cy.login("shraddha.regmi", "Shraddha@123");
+    cy.loginSession();
+    cy.visit("/admin/commerce/products");
     cy.location("pathname").should("eq", "/admin/commerce/products");
   });
   it("TC_01- QCP Management", () => {

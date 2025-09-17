@@ -1,0 +1,152 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 1,
+    "pending": 0,
+    "failures": 2,
+    "start": "2025-09-16T06:17:49.501Z",
+    "end": "2025-09-16T06:19:21.480Z",
+    "duration": 91979,
+    "testsRegistered": 3,
+    "passPercent": 33.33333333333333,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "8c28ae6f-f2ac-429d-9714-44fa3a1b5115",
+      "title": "",
+      "fullFile": "cypress\\e2e\\addrisk.cy.js",
+      "file": "cypress\\e2e\\addrisk.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "14808a85-a379-40f9-b71b-c47b10f3808c",
+          "title": "Add Risk Management",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "TC_01- QCP Management",
+              "fullTitle": "Add Risk Management TC_01- QCP Management",
+              "timedOut": null,
+              "duration": 49209,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(\"#toolbar-item-administration\").click().click();\ncy.get(\".toolbar-icon-commerce-admin-commerce\").click();\ncy.get(\".management-link--cp-risk-cp-risk-list > .card\").click();\ncy.get('[data-original-order=\"2\"] > .tabs__link').click();\ncy.get(\".local-actions__item > .button\").click();\ncy.get(\"#edit-add-to-qcp-table\").select(\"Yes\");\ncy.get('[name=\"action[0][value]\"]').type(qcpName);\ncy.get('[name=\"op\"]').click();\ncy.contains(\"QCP created successfully.\").should(\"be.visible\");\ncy.contains(qcpName).should(\"be.visible\");",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#edit-add-to-qcp-table`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#edit-add-to-qcp-table`, but never found it.\n    at Context.eval (webpack://redev/./cypress/e2e/addrisk.cy.js:23:7)",
+                "diff": null
+              },
+              "uuid": "e3f4ee2e-7503-4e7e-8d7f-3890edd4d983",
+              "parentUUID": "14808a85-a379-40f9-b71b-c47b10f3808c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC_02 - Add QCP into Risk",
+              "fullTitle": "Add Risk Management TC_02 - Add QCP into Risk",
+              "timedOut": null,
+              "duration": 15973,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(\"#toolbar-item-administration\").click().click();\ncy.get(\".toolbar-icon-commerce-admin-commerce\").click();\ncy.get(\".management-link--cp-risk-cp-risk-list > .card\").click();\ncy.contains(\"a\", \"Create New Risk\").click();\ncy.get(\"#edit-add-to-risk-table\").select(\"Yes\");\ncy.get(\"#edit-category\").select(\"E\");\ncy.get(\"#edit-hazard-risk-statement-0-value\").type(riskStatement);\ncy.get(\"#edit-risk-abbreviated-terms-0-value\").type(riskTerms);\ncy.get(\"#edit-type-of-risk\").select(\"Instrument Risk\");\ncy.get(\"#edit-qcp-ids-0-target-id\").type(qcpName);\ncy.get(\"#edit-submit\").click();\ncy.contains(riskStatement).should(\"be.visible\");",
+              "err": {},
+              "uuid": "20eb106b-5b64-44e9-b7a0-c083bb001a9f",
+              "parentUUID": "14808a85-a379-40f9-b71b-c47b10f3808c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC_03 -Add QCP And Risk Into Product",
+              "fullTitle": "Add Risk Management TC_03 -Add QCP And Risk Into Product",
+              "timedOut": null,
+              "duration": 26643,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(\":nth-child(1) > .button\").click();\ncy.get(\":nth-child(1) > .admin-item__title > .admin-item__link\").click();\ncy.get(\"#edit-title-0-value\").type(productName);\ncy.get(\"#edit-field-manufacturer-0-value\").type(productManufacturer);\ncy.get(\"#edit-field-device-0-value\").type(DeviceType);\ncy.get(\"#edit-field-test-0-value\").type(Test);\ncy.get(\"#edit-field-analytes-0-value\").type(Analystes);\ncy.get('[name=\"field_instrument[0][target_id]\"]').type(\"Prabal Instrument System Test\");\ncy.contains(\".ui-menu-item\", \"Prabal Instrument System Test\").click();\ncy.get(\"#edit-stores-target-id-value-2\").check();\ncy.get(\"#edit-actions-submit\").click();\ncy.contains(productName).should(\"be.visible\");\ncy.get(\"#edit-title\").type(productName);\ncy.get(\"#edit-submit-commerce-products\").click();\ncy.contains(\"a\", \"View Risks\").click();\ncy.get(\"#add-risk-button\").click();\ncy.get('[name=\"search_risk\"]').type(riskStatement);\ncy.get('[name=\"search_risks_button\"]').click();\ncy.get('input[id^=\"edit-risk-results-\"]').check();\ncy.get('[name=\"next_step_button\"]').click();\ncy.get('[name=\"submit_all_steps_button\"]').click();\ncy.get(\".messages__header\").should(\"be.visible\");\ncy.get(\".views-field-nothing > .button\").click();\n// cy.get(\"#add-qcp-button\").click();\ncy.get(\"#add-qcp-button\").click({\n  force: true\n});\n// cy.contains(\"a\", \"Add QCP\").click();\ncy.get('[name=\"search_qcp\"]').type(qcpName);\ncy.get('[name=\"search_qcp\"]').first().click();\ncy.get(\"#edit-search--8tXGMyTKVrk\").click();\ncy.get(\"#edit-qcp-results-459--9obciBeKwfo\").check();\ncy.get(\"#edit-add-selected--i_NInTG8IwM\").click();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#edit-stores-target-id-value-2`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#edit-stores-target-id-value-2`, but never found it.\n    at Context.eval (webpack://redev/./cypress/e2e/addrisk.cy.js:57:7)",
+                "diff": null
+              },
+              "uuid": "7970e229-3be5-4255-8ba3-6825dbd9b08b",
+              "parentUUID": "14808a85-a379-40f9-b71b-c47b10f3808c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "20eb106b-5b64-44e9-b7a0-c083bb001a9f"
+          ],
+          "failures": [
+            "e3f4ee2e-7503-4e7e-8d7f-3890edd4d983",
+            "7970e229-3be5-4255-8ba3-6825dbd9b08b"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 91825,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.3.0"
+    }
+  }
+}

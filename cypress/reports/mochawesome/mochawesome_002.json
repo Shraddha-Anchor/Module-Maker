@@ -1,0 +1,247 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 8,
+    "passes": 6,
+    "pending": 0,
+    "failures": 2,
+    "start": "2025-09-16T06:19:23.014Z",
+    "end": "2025-09-16T06:20:30.772Z",
+    "duration": 67758,
+    "testsRegistered": 8,
+    "passPercent": 75,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "70ac4334-0ddb-4c52-848d-80bb6c87a94f",
+      "title": "",
+      "fullFile": "cypress\\e2e\\login.cy.js",
+      "file": "cypress\\e2e\\login.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "3ffabe95-0e81-4059-8452-3d9a8eee53ca",
+          "title": "ModuleMaker Login Tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "TC_01 - Valid Login",
+              "fullTitle": "ModuleMaker Login Tests TC_01 - Valid Login",
+              "timedOut": null,
+              "duration": 39170,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.login(\"shraddha.regmi\", \"Shraddha@123\");\ncy.location(\"pathname\").should(\"eq\", \"/admin/commerce/products\");\ncy.get(\"#toolbar-item-user\").click();\ncy.contains(\"a\", \"Log out\").click();",
+              "err": {},
+              "uuid": "81abae02-1f93-4050-a7c2-a6e8c0962c90",
+              "parentUUID": "3ffabe95-0e81-4059-8452-3d9a8eee53ca",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC_02 - Invalid Login",
+              "fullTitle": "ModuleMaker Login Tests TC_02 - Invalid Login",
+              "timedOut": null,
+              "duration": 2539,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(\"#edit-name\").clear().type(\"wrongUsername\");\ncy.get(\"#edit-pass\").clear().type(\"wrongPassword\");\ncy.get(\"#edit-submit\").click();\n// Assert error message is visible\ncy.get(\".messages--error\").should(\"contain.text\", \"Unrecognized username or password\");\n// Optional: URL still includes login\ncy.url().should(\"include\", \"/user/login\");",
+              "err": {},
+              "uuid": "4c9d6469-04bb-44e3-898d-5d61efd8a314",
+              "parentUUID": "3ffabe95-0e81-4059-8452-3d9a8eee53ca",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC_03 - Blank Login",
+              "fullTitle": "ModuleMaker Login Tests TC_03 - Blank Login",
+              "timedOut": null,
+              "duration": 875,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(selectors.submit).click();\ncy.get(`${selectors.email}:invalid`).should(\"exist\");\ncy.get(`${selectors.password}:invalid`).should(\"exist\");",
+              "err": {},
+              "uuid": "f27c353c-582a-488b-91fb-7f71830625d1",
+              "parentUUID": "3ffabe95-0e81-4059-8452-3d9a8eee53ca",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC_04 - Valid Username and Blank Password",
+              "fullTitle": "ModuleMaker Login Tests TC_04 - Valid Username and Blank Password",
+              "timedOut": null,
+              "duration": 1215,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(selectors.email).type(\"shraddha.regmi\");\ncy.get(selectors.submit).click();\ncy.get(`${selectors.password}:invalid`).should(\"exist\");",
+              "err": {},
+              "uuid": "b634cc55-8cf5-4d99-b9d3-d9e2221b4b6e",
+              "parentUUID": "3ffabe95-0e81-4059-8452-3d9a8eee53ca",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC_05 - Blank Username and Valid Password",
+              "fullTitle": "ModuleMaker Login Tests TC_05 - Blank Username and Valid Password",
+              "timedOut": null,
+              "duration": 1240,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(selectors.password).type(\"Shraddha@123\");\ncy.get(selectors.submit).click();\ncy.get(`${selectors.email}:invalid`).should(\"exist\");",
+              "err": {},
+              "uuid": "194680f7-7bde-4e19-93bd-58a417d3df99",
+              "parentUUID": "3ffabe95-0e81-4059-8452-3d9a8eee53ca",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC_06 - Capital Username and Valid Password",
+              "fullTitle": "ModuleMaker Login Tests TC_06 - Capital Username and Valid Password",
+              "timedOut": null,
+              "duration": 8907,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.login(\"Shraddha.regmi\", \"Shraddha@123\");\ncy.get(`${selectors.email}:invalid`).should(\"exist\");",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#edit-name:invalid`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#edit-name:invalid`, but never found it.\n    at Context.eval (webpack://redev/./cypress/e2e/login.cy.js:53:41)",
+                "diff": null
+              },
+              "uuid": "4e6d3831-60a1-41ea-9ef6-bf0703edfd52",
+              "parentUUID": "3ffabe95-0e81-4059-8452-3d9a8eee53ca",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC_07 - Remember me",
+              "fullTitle": "ModuleMaker Login Tests TC_07 - Remember me",
+              "timedOut": null,
+              "duration": 12613,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(selectors.email).type(\"shraddha.regmi\");\ncy.get(selectors.password).type(\"Shraddha@123\");\ncy.get('[name=\"persistent_login\"]').check().should(\"be.checked\");\ncy.get(selectors.submit).click();\ncy.get(\"#toolbar-item-user\").click();\ncy.get(\".logout > a\").click();\ncy.get(selectors.username).should(\"have.value\", \"shraddha.regmi\");",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `undefined`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `undefined`, but never found it.\n    at Context.eval (webpack://redev/./cypress/e2e/login.cy.js:63:31)",
+                "diff": null
+              },
+              "uuid": "c6f0ab7c-d4fa-42f5-a9ef-94e37cc292c3",
+              "parentUUID": "3ffabe95-0e81-4059-8452-3d9a8eee53ca",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC_08 - Forgot Password",
+              "fullTitle": "ModuleMaker Login Tests TC_08 - Forgot Password",
+              "timedOut": null,
+              "duration": 960,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(\".reset_text > .switcher-text\").click();\ncy.location(\"pathname\").should(\"eq\", \"/user/password\");\ncy.get(\"h1\").should(\"have.text\", \"Module Maker Reset your password\");",
+              "err": {},
+              "uuid": "9f9c3707-5c30-431e-bb04-eb6c6c0a5e9e",
+              "parentUUID": "3ffabe95-0e81-4059-8452-3d9a8eee53ca",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "81abae02-1f93-4050-a7c2-a6e8c0962c90",
+            "4c9d6469-04bb-44e3-898d-5d61efd8a314",
+            "f27c353c-582a-488b-91fb-7f71830625d1",
+            "b634cc55-8cf5-4d99-b9d3-d9e2221b4b6e",
+            "194680f7-7bde-4e19-93bd-58a417d3df99",
+            "9f9c3707-5c30-431e-bb04-eb6c6c0a5e9e"
+          ],
+          "failures": [
+            "4e6d3831-60a1-41ea-9ef6-bf0703edfd52",
+            "c6f0ab7c-d4fa-42f5-a9ef-94e37cc292c3"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 67519,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.3.0"
+    }
+  }
+}

@@ -11,11 +11,23 @@ describe("ModuleMaker Login Tests", () => {
   it("TC_01 - Valid Login", () => {
     cy.login("shraddha.regmi", "Shraddha@123");
     cy.location("pathname").should("eq", "/admin/commerce/products");
+    cy.get("#toolbar-item-user").click();
+    cy.contains("a", "Log out").click();
   });
 
   it("TC_02 - Invalid Login", () => {
-    cy.login("Wrong", "Wrong");
-    cy.contains("Unrecognized username or password").should("be.visible");
+    cy.get("#edit-name").clear().type("wrongUsername");
+    cy.get("#edit-pass").clear().type("wrongPassword");
+    cy.get("#edit-submit").click();
+
+    // Assert error message is visible
+    cy.get(".messages--error").should(
+      "contain.text",
+      "Unrecognized username or password"
+    );
+
+    // Optional: URL still includes login
+    cy.url().should("include", "/user/login");
   });
 
   it("TC_03 - Blank Login", () => {

@@ -1,0 +1,162 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-09-16T06:29:33.078Z",
+    "end": "2025-09-16T06:32:43.956Z",
+    "duration": 190878,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "9dadec0d-5602-4876-8ddb-462d7df784c8",
+      "title": "",
+      "fullFile": "cypress\\e2e\\qcp.cy.js",
+      "file": "cypress\\e2e\\qcp.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e079b511-afdf-4ea6-aa6a-af5e5394e5f9",
+          "title": "QCP Management",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "TC_01 - Create QCP (Mandatory Field)",
+              "fullTitle": "QCP Management TC_01 - Create QCP (Mandatory Field)",
+              "timedOut": null,
+              "duration": 79683,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "goToQCPList();\ncy.get(\".local-actions__item > .button\").click();\ncy.get(\"#edit-add-to-qcp-table\").select(\"Yes\");\ncy.get('[name=\"action[0][value]\"]').type(qcpName);\ncy.get('[name=\"op\"]').click();\ncy.contains(\"QCP created successfully.\").should(\"be.visible\");\ncy.contains(qcpName).should(\"be.visible\");",
+              "err": {},
+              "uuid": "233953e9-573d-477b-ae70-337b6ada602e",
+              "parentUUID": "e079b511-afdf-4ea6-aa6a-af5e5394e5f9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC_02 - Edit QCP",
+              "fullTitle": "QCP Management TC_02 - Edit QCP",
+              "timedOut": null,
+              "duration": 36490,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "goToQCPList();\ncy.get(`a[aria-label*=\"${qcpName}\"]`).should(\"be.visible\").click();\nconst updatedName = `${qcpName} - Edited`;\ncy.get(\"#edit-action-0-value\").clear().type(updatedName);\ncy.get('[name=\"op\"]').click();\ncy.contains(updatedName).should(\"be.visible\");",
+              "err": {},
+              "uuid": "4b34de7d-5d34-4d66-b656-8dcffe3343db",
+              "parentUUID": "e079b511-afdf-4ea6-aa6a-af5e5394e5f9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC_03 - Delete QCP",
+              "fullTitle": "QCP Management TC_03 - Delete QCP",
+              "timedOut": null,
+              "duration": 36394,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "goToQCPList();\ncy.get(`a[aria-label*=\"${qcpName}\"]`).should(\"be.visible\").click();\ncy.get(\"#edit-delete\").click();\ncy.get('button[type=\"button\"]').contains(\"Delete\").click();\ncy.get(\".messages__header\").should(\"be.visible\");",
+              "err": {},
+              "uuid": "25711a88-8d37-40a2-9205-ddb78e6c139d",
+              "parentUUID": "e079b511-afdf-4ea6-aa6a-af5e5394e5f9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC_04 - Create QCP (All Field)",
+              "fullTitle": "QCP Management TC_04 - Create QCP (All Field)",
+              "timedOut": null,
+              "duration": 37723,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "goToQCPList();\ncy.get(\".local-actions__item > .button\").click();\ncy.get(\"#edit-add-to-qcp-table\").select(\"Yes\");\ncy.get('[name=\"action[0][value]\"]').type(qcpName + \" All\");\ncy.get(\"#edit-frequency-0-value\").type(\"10\");\ncy.get(\"#edit-criteria-0-value\").type(\"Test Criteria\");\ncy.get('[name=\"citation_text[0][inline_container][field_wrapper_1][agg_id]\"]').select(\"CAP\");\ncy.get('[name=\"citation_text_add_more\"]').click();\ncy.get('select[name=\"citation_text[1][inline_container][field_wrapper_1][agg_id]\"]').select(\"ISO 15189\");\ncy.get('[name=\"op\"]').click();\ncy.contains(\"QCP created successfully.\").should(\"be.visible\");\ncy.contains(qcpName).should(\"be.visible\");",
+              "err": {},
+              "uuid": "a89f2112-804f-4279-ac68-bb2bf7378937",
+              "parentUUID": "e079b511-afdf-4ea6-aa6a-af5e5394e5f9",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "233953e9-573d-477b-ae70-337b6ada602e",
+            "4b34de7d-5d34-4d66-b656-8dcffe3343db",
+            "25711a88-8d37-40a2-9205-ddb78e6c139d",
+            "a89f2112-804f-4279-ac68-bb2bf7378937"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 190290,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.3.0"
+    }
+  }
+}

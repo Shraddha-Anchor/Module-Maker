@@ -4,7 +4,8 @@
   "description": "Module Maker ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:report": "cypress run && mochawesome-merge cypress/reports/mochawesome/*.json --output mochawesome.json && marge mochawesome.json --reportDir mochawesome-report"
   },
   "keywords": [],
   "author": "",
@@ -12,5 +13,12 @@
   "type": "commonjs",
   "dependencies": {
     "cypress": "^15.1.0"
+  },
+  "devDependencies": {
+    "cypress-file-upload": "^5.0.8",
+    "marge": "^1.0.1",
+    "mochawesome": "^7.1.4",
+    "mochawesome-merge": "^5.0.0",
+    "mochawesome-report-generator": "^6.3.0"
   }
 }
