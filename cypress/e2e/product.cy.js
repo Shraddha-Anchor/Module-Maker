@@ -36,6 +36,7 @@ describe("Product Management", () => {
   beforeEach(() => {
     cy.loginSession();
     cy.visit("/admin/commerce/products");
+     cy.wait(1000);
     cy.location("pathname").should("eq", "/admin/commerce/products");
   });
 

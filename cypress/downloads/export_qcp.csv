@@ -1,0 +1,337 @@
+﻿"Add To QCP Table","QCP ID",Action,Frequency,Criteria,Delete
+Y,9811,Test,Test,Test,0
+Y,9814,"Critical operating characteristics of the ??instrument?? are checked TestTest","When indicated","Within expected performance characteristics test",0
+Y,9815,"Noise level is controlled","Regularly test",Test,0
+Y,9816,"Test Test","Test Test",Test,0
+Y,9817,Test,Test,Test,0
+Y,6010,"Written organization chart","Updated as needed",,0
+Y,6030,"Retesting by a different method or device","Unusual patient results","Expected clinical results",0
+Y,6040,"Suitably trained individual from the laboratory, nursing service, or medical staff available for troubleshooting","Unusual patient results","Concerns are resolved",0
+Y,6050,"(i-STAT MQSI) Electronic Simulator check","Daily on days of patient testing per handheld","Within expected values",0
+Y,6051,"(i-STAT MQSI) Verify new or replacement handheld operation with Electronic Simulator","Upon receipt of ??instrument?? and before patient use","Within expected values",0
+Y,6052,"(i-STAT MQSI) Check temperature strip","Per shipment of cartridges","Satisfactory transit temperatures in each shipping container",0
+Y,6053,"(i-STAT MQSI) Log  proper cartridge refrigeration","All refrigerated cartridges",2-8??C,0
+Y,6054,"(i-STAT MQSI) Remove cartridges exposed to high heat from use","All stored cartridges","Exceeding 30??C",0
+Y,6055,"(i-STAT MQSI) Remove cartridges from use which exceed the manufacturer's printed expiration","Every cartridge","Beyond manufacturer's printed expiration",0
+Y,6056,"(i-STAT MQSI) Remove from use cartridges which exceed the room temperature expiry","Every cartridge","Beyond room temperature expiry",0
+Y,6057,"(i-STAT MQSI) Exposed cartridges are used immediately","Every cartridge","Upon cartridge removal from the pouch",0
+Y,6058,"(i-STAT MQSI) Cartridges are allowed to equilibrate to room temperature","Every cartridge or box","5 minutes for a single cartridge / 60 minutes for a box of cartridges",0
+Y,6059,"(i-STAT MQSI) Check Thermal Probe","Every 6 months","Within expected values",0
+Y,6060,"(i-STAT MQSI) Train ??test personnel?? to avoid pre-analytical and post-analytical errors","During competency assessment",,0
+Y,6061,"(i-STAT MQSI) Update ??instrument?? software","Every 6 months","Every handheld receives a successful update",0
+Y,6062,"(i-STAT MQSI) External Simulator check","After software update","Within expected values",0
+Y,6080,"Manufacturer's instructions are followed for testing","All patient samples","Per manufacturer's instructions",0
+Y,7000,"Specimen collection procedures are available","At all times to personnel collecting specimens","Per laboratory specimen collection procedures",0
+Y,7010,"Procedure for Medical Records",Daily,"Per medical record procedure",0
+Y,7020,"Urine Drugs of Abuse reporting procedure","All patient samples","Per laboratory DOA reporting procedure",0
+Y,7030,"Group A Streptococcus Ag negative confirmation","All pediatric patients","Per manufacturer's instructions",0
+Y,7040,"??Test personnel?? ID on report",Daily,,0
+Y,7050,"??Test personnel?? have a barcoded ID badge","All ??test personnel??","Certified ??test personnel??",0
+Y,7060,"??Instrument?? is approved for patient use","Before patient testing","Laboratory director evaluates performance characteristics and performance verification",0
+Y,7070,"Critical operating characteristics of the ??instrument?? are checked",Regularly,"Within expected performance characteristics",0
+Y,7080,"Accurate thermometric devices are used to monitor the testing environment",Daily,"Within manufacturer limits for test performance",0
+Y,7090,"Check thermometer calibration","Prior to calibration expiration","Thermometer calibration verified",0
+Y,7110,"Operator ID lockout is enabled by method",Always,"Certified ??test personnel??",0
+Y,7140,"Expired ??test personnel?? are locked out","Upon individual expiry","Certified ??test personnel??",0
+Y,7160,"Data management software collects control results for review by the Technical Consultant","Each control result","Within expected values",0
+Y,7170,"Corrective action for failed control result is noted electronically or on paper","Each control outlier","Outside expected values",0
+Y,7180,"QC Lockout is enabled","Each control result","PASS or FAIL within expected values",0
+Y,7190,"2 levels of controls","Daily on days of patient testing","Within expected values",0
+Y,7200,"2 levels of controls (coagulation)","Every 8 hours on days of patient testing","Within expected values",0
+Y,7210,"Positive and negative control (qualitative)","Daily on days of patient testing","Within expected values",0
+Y,7220,"Validation study of external control to electronic/procedural/built-in controls","Initial system implementation","20 consecutive days within expected values",0
+Y,7230,"External control","30 days","Within expected values",0
+Y,7240,"External control","Per lot","Within expected values",0
+Y,7250,"External control","Per shipment","Within expected values",0
+Y,7260,"External control","After major system maintenance","Within expected values",0
+Y,7270,"External control","After software upgrade","Within expected values",0
+Y,7280,"Weak positive and negative control (qualitative)","30 days","Within expected values",0
+Y,7290,"Weak positive and negative control (qualitative)","Per lot","Within expected values",0
+Y,7310,"Weak positive and negative control (qualitative)","Per shipment","Within expected values",0
+Y,7320,"Weak positive and negative control (qualitative)","After major system maintenance","Within expected values",0
+Y,7330,"Weak positive and negative control (qualitative)","After software upgrade","Within expected values",0
+Y,7360,"QC data review by the laboratory director or designee",Monthly,"Within expected values",0
+Y,7370,"Verify expected values limits established by the manufacturer","Per lot","Within expected values",0
+Y,7380,"Establish expected QC values limits","Per lot","Repetitive analysis of control materials over time",0
+Y,7390,"Repeat analysis of patient samples back to last acceptable QC","When controls exceed established limits","Within laboratory established criteria for result variation",0
+Y,7400,"All ??test personnel?? perform QC","Rotate with each control event","Records reflect QC performed by all ??test personnel??",0
+Y,7410,"All ??test personnel?? perform QC in the same manner as patient samples","Rotate with each control event","Detect testing process variation among ??test personnel??",0
+Y,7420,"QC reviewed by ??test personnel??","Each control event","Within established values",0
+Y,7430,"QC lockout enabled on ??instrument??","Per control run","Within established values",0
+Y,7440,"Evaluate comparability of ??instrument??","Twice per year","Within laboratory established criteria for result variation",0
+Y,7450,"Gram stains checked for intended reactivity","Each new batch of stain","Within expected reactivity for gram-positive and gram-negative organisms",0
+Y,7460,"Gram stains checked for intended reactivity",Weekly,"Within expected reactivity for gram-positive and gram-negative organisms",0
+Y,7470,"Stains checked for intended reactivity",Daily,"Within expected reactivity",0
+Y,7480,"Calibration procedures are followed for waived testing","Per manufacturer's instructions","Per manufacturer's instructions",0
+Y,7490,"Instrument calibration is performed","Per manufacturer's requirements","Per manufacturer's instructions",0
+Y,7500,"Calibration verification","Unusual outliers, trends, or shifts when other means of correction with controls are unsuccessful","Within limits of acceptability",0
+Y,7510,"Calibration verification","After major maintenance or service","Within limits of acceptability",0
+Y,7520,"Calibration verification","Every 6 months","Within limits of acceptability",0
+Y,7530,"Calibration verification",Daily,"Within limits of acceptability",0
+Y,7550,"Analytical Measurement Range (AMR) is established","Initial system implementation","According to manufacturer's documentation",0
+Y,7560,"Analytical Measurement Range (AMR) verification","Every 6 months","Upper and lower limits as expected",0
+Y,7570,"Analytical Measurement Range (AMR) verification","Initial system implementation","Upper and lower limits as expected",0
+Y,7580,"Analytical Measurement Range (AMR) verification","After major maintenance or service","Upper and lower limits as expected",0
+Y,7590,"Analytical Measurement Range (AMR) verification","Change in lots of chemically or physically active reagents","Upper and lower limits as expected",0
+Y,7600,"Analytical Measurement Range (AMR) verification","Change in major test system components","Upper and lower limits as expected",0
+Y,7610,"Personnel performing radial artery sample collection are appropriately trained","Prior to performing radial artery sample collection","Documentation of training available",0
+Y,7620,"Allen's Test is performed","Per radial artery puncture","Collateral circulation is verified and documented",0
+Y,7630,"System to prevent ambient air contamination","Per blood gas sample","Follow established procedures",0
+Y,7640,"Function checks for ??instrument?? are performed","As defined by manufacturer",,0
+Y,7650,"Blood gas calibration materials meet manufacturer's specification or are traceable to NIST Standard Reference Materials (SRM)","Per calibration","pH, PO2 and PCO2 sensors are traceable to NIST standards and are within expected values",0
+Y,7660,"One point calibration is run (Blood gas)","Per patient test","Manufacturer's requirements",0
+Y,7670,"Two point calibration is run (Blood gas)","Every 8 hours on days of patient testing","Manufacturer's requirements",0
+Y,7680,"Blood gas calibration is verified for influence of barometric pressure",Periodically,"Calibration compensates for the influence of barometric pressure",0
+Y,7690,"1 level of control (Blood gas)","Every 8 hours on days of patient testing","Within expected values and representing high and low values at least daily",0
+Y,7700,"Blood gas controls represent high and low values for pH, PO2 and PCO2","On days of patient testing","Within expected values",0
+Y,7710,"1 level of control (Blood gas)","Per patient or every 30 minutes of use","Within expected values",0
+Y,7730,"Standard precautions (Universal Precautions) are employed by ??test personnel??","Per patient test","Per institutional policy",0
+Y,7740,"Single use lancets are used","Per fingerstick","Single use and auto-disabling device",0
+Y,7750,"Disinfection of ??instrument??","After each patient use","Per manufacturer's instructions",0
+Y,7770,"Procedure manual available",Always,"Per institutional policy",0
+Y,7800,"Competency requirements completed",Yearly,"Per institutional policy",0
+Y,7830,"Reporting of non-conforming events",Immediately,"Per QMS policy",0
+Y,7840,"Track percent of patient wristbands with errors",Monthly,"Established by QA",0
+Y,7850,"Track percent of ordered tests with patient identification errors",Monthly,"Established by QA",0
+Y,7860,"Track percent of results with identification errors",Monthly,"Established by QA",0
+Y,7870,"Track percent of specimens accepted for testing",Monthly,"Established by QA",0
+Y,7880,"Track collection-to-reporting median turnaround time",Monthly,"Established by QA",0
+Y,7890,"Track turnaround time outliers",Monthly,"Established by QA",0
+Y,7900,"Track percent of critical results reported to caregivers",Monthly,"Established by QA",0
+Y,7910,"Track percent of critical results for which the primary caregiver cannot be contacted in a reasonable period of time",Monthly,"Established by QA",0
+Y,7920,"Track customer satisfaction with a standardized tool",Monthly,"Established by QA",0
+Y,7930,"Track percent of patient results which are corrected",Monthly,"Established by QA",0
+Y,7940,"Product recalls or product actions are dealt with immediately","Upon receipt","Follow-up documentation",0
+Y,7950,"Device-related adverse events are reported","By January 1st of each year","Per FDA mandatory reporting guidelines on Form 3419 or Form 3500",0
+Y,7960,"Blood collection supplies are stored properly","All blood collection supplies","Per manufacturer's instructions",0
+Y,7970,"Two patient identifiers are checked","Before collecting patient specimen","Two patient identifiers as defined by organizational policy",0
+Y,7980,"Identifying labels contain two patient identifiers","All specimens at time of collection","Per institutional policy",0
+Y,7990,"Care is provided to patients who experience adverse reactions from phlebotomy",Immediately,"Fainting, seizures, or injuries",0
+Y,8000,"Tracking and labeling of patient samples",Regularly,"Per laboratory specimen collection procedures",0
+Y,8010,"Corrective action or communications are logged for improper specimens",Regularly,,0
+Y,8020,"Accuracy of manual entry is monitored",Regularly,"Manual result, demographics, and other data entry",0
+Y,8030,"Patient specimens are positively identified at all times","Throughout the testing process","Barcoded or manually labeled sample containers for aliquots which track patient identification, collection date/time, and specimen type",0
+Y,8040,"Written or electronic orders are required from an authorized provider","Every patient test",,0
+Y,8050,"Verbal test are followed up with a written or electronic order","Within 30 days",,0
+Y,8060,"Verbal orders are read back",Immediately,"Accurate transcription of verbal order",0
+Y,8070,"Specimen containers are evaluated to reduce or eliminate analytic interference","Initial system implementation","Direct testing, clinical literature, or manufacturer information",0
+Y,8080,"Refrigerator temperatures are logged",Daily,"Within manufacturer's requirements for contents",0
+Y,8090,"Proper data elements for patient results are reported","Every patient test report","Result, units of measure, reference intervals, specimen source, and specimen conditions which limit adequacy",0
+Y,8100,"Clinical personnel are notified of corrected reports",Promptly,"Documentation of notification",0
+Y,8110,"Revised patient reports are clearly identified",Promptly,"Marked as revised and presented with original data",0
+Y,8170,"Calculated value formulas are reviewed","Every two years or after system changes which may have an affect",,0
+Y,8180,"Comments are included where accuracy of results may be compromised","When applicable, for example, hemolyzed, lipemic or icteric samples",,0
+Y,8190,"Audit trail is maintained for patient data","All edits to patient record",,0
+Y,8200,"Operator IDs are entered into the ??instrument??","Every patient test","Certified ??test personnel??",0
+Y,8210,"Physicians are notified of patient results","Every patient test","Policy defining routing of patient results to physicians",0
+Y,8230,"Autoverification of patient results was validated","Initial system implementation; annually; system changes which may affect autoverification logic",,0
+Y,8240,"QC Lockout is enabled for test systems with autoverification","Each ??instrument??",,0
+Y,8270,"Multiple identical ??instrument?? are uniquely identified in the audit trail","Every patient test",,0
+Y,8280,"Reference ranges and units of measure are transmitted with the patient result across the interface","Every patient test",,0
+Y,8290,"Verify patient results are accurately transmitted","Initial system implementation; every two years; system changes which may affect result integrity","From the point of data entry to patient reports",0
+Y,8300,"Personnel have high school diploma or equivalent and documented training","Before patient testing","Performing moderate complexity testing",0
+Y,8310,"??Test personnel?? are tested for visual color discrimination","Before patient testing","Colored items pertinent to the job or test",0
+Y,8320,"Unsatisfactory ??test personnel?? performance is corrected","Upon failure","Retrain and reassess competency",0
+Y,8330,"Adequate testing space is provided","Every patient test",,0
+Y,8340,"Adequate lighting is provided","Every test location","Sufficient lighting without excessive glare",0
+Y,8350,"Adequate sinks are provided","Every test location",,0
+Y,8360,"Adequate power is provided","Every test location and/or ??instrument?? recharging station","According to manufacturer's specifications",0
+Y,8370,"Adequate ventilation is provided","Every test location","According to manufacturer's specifications",0
+Y,8380,"Room temperature and humidity are controlled","Every test and/or reagent storage location","According to manufacturer's specifications",0
+Y,8390,"Exposure to direct sunlight is minimized","Every test location","Reduce glare and temperature variation to the minimum",0
+Y,8400,"Dust, debris and clutter is reduced","Every test location","Well-maintained testing area",0
+Y,8410,"??Test personnel?? hand-off communication is effective","Shift-change; change in patient-care responsibility","Procedure which includes asking and responding to questions",0
+Y,8420,"Inventory control system in place",,"Reduce or eliminate emergency shortage of supplies",0
+Y,8430,"Emergency power is available","During power outages","Reduce or eliminate downtime and spoilage of reagents",0
+Y,8440,"Personal Protective Equipment (PPE) is provided and used","Every patient test","PPE available in technical work areas",0
+Y,8450,"Sharps are properly disposed","Following patient phlebotomy","Disposed in an puncture-resistant container.  Bending, breaking, needle removal, recapping, and other manual manipulation is eliminated",0
+Y,8460,"??Instrument?? is properly grounded and checked for electrical current leakage","Initial system implementation; after repair or modification; when a problem is suspected.","No current leakage in the patient care environment",0
+Y,8470,"Frayed or worn power cords are replaced","Upon notice","Exposed wires",0
+Y,8480,"Electrical devices are kept out of the patient vicinity","At all times","The area within 6 ft. horizontally from the perimeter of the bed, and within 7 1/2 ft. above the floor",0
+Y,8490,"Latex is eliminated from the patient care area","At all times",,0
+Y,8500,"Biohazard waste is disposed properly","At all times","Biohazard labeled containers appropriate to the waste",0
+Y,8510,"Proficiency testing is performed","Three times per year","Within expected values among the peer group and by ??test personnel??",0
+Y,8530,"??Instrument?? maintenance is documented and reviewed by the Technical Consultant",Monthly,"Evaluated by Technical Consultant",0
+Y,8540,"Critical results are reported to the caregiver",Immediately,"Outside critical or alert limits",0
+Y,8550,"Critical results are read back",Immediately,"When communicated verbally or by phone",0
+Y,8560,"Reagents, calibrators, controls and solutions are properly labeled with expiration","Upon receipt or removal from refrigeration","According to manufacturer's specifications",0
+Y,8570,"??Test?? ??consumable?? is used within indicated expiration date","All ??test?? ??consumable??","Manufacturer printed expiration",0
+Y,8580,"Reagents are not mixed across test kit lots","Per patient test","Reagent test kit components are contained",0
+Y,8590,"Accuracy is established with reference materials or materials of known concentration","Initial system implementation",,0
+Y,8600,"Precision is established with control materials","Initial system implementation","Within-run and between-run, over time",0
+Y,8610,"Lower detection limits are established","Initial system implementation","Published literature or manufacturer information",0
+Y,8620,"Interfering or cross-reactive substances are identified","Initial system implementation","Plan of action for identifying interfering substances",0
+Y,8630,"Body fluids have been validated for testing on ??instrument??","For methods not intended for body fluids","Method validation documented for body fluids",0
+Y,8640,"Significant method changes are explained to physicians","Each analytical methodology change","In directed mailing, laboratory newsletter or included in patient test report",0
+Y,8650,"Reference intervals are established","Initial system implementation","For each analyte and specimen source: 20 healthy individuals with no more than 2 outliers; manufacturer published data",0
+Y,8660,"Reference intervals are confirmed","Introduction of a new analyte, change in analytic methodology or with change in patient population","For each analyte and specimen source: 20 healthy individuals with no more than 2 outliers; manufacturer published data",0
+Y,8670,"Specimen integrity is evaluated by ??test personnel??","Every patient test",,0
+Y,8680,"Specimen rejection criteria is documented","Every patient sample evaluated",,0
+Y,8690,"Calibration of waived tests","As required","According to manufacturer's specifications",0
+Y,8700,"Calibration materials of high quality used","All calibrations including AMR Calibratins","According to manufacturer's specifications",0
+Y,8710,Recalibration,"As required","According to manufacturer's specifications",0
+Y,8720,"AMR Calibration","As required","Per institutional policy",0
+Y,8730,"Cut-off value verified for qualitative tests","Initial system implementation",,0
+Y,8740,"Method comparison is verified across ??instrument?? or methods","Twice per year","Correlation of results",0
+Y,8750,"Neonatal bilirubin testing is standardized to a reference material","Initial system implementation","Results in the range 5 to 25 mg/dL are clinically suitable",0
+Y,8760,"??Test personnel?? follow manufacturer's instructions for quality control (waived testing)","As defined by manufacturer",,0
+Y,8770,"Control data are reviewed by laboratory director or designee",Monthly,"Within expected values",0
+Y,8780,"Corrective action is completed for QC outliers","Before patient testing","Outside expected values",0
+Y,8790,"Control results are reviewed for acceptability (waived)","Before patient testing",,0
+Y,8800,"Controls are run daily for quantitative test (nonwaived)","On days of patient testing",,0
+Y,8810,"Control ranges are verified for quantitative test (nonwaived)","Before control material put into use","Verify manufacturer's established ranges for assayed control",0
+Y,8840,"Alternate controls used","Before patient testing if needed","Per Alternate Control Procedure",0
+Y,8850,"Quality control data are organized in a format to detect problems and trends",,"Levy-Jennings or other graphical display of data",0
+Y,8860,"Control statistical data are examined for imprecision",Monthly,"SD and CV or other appropriate statistics; does not included external controls run only to verify new lots/shipments",0
+Y,8870,"Corrective action is completed for QC outliers (nonwaived)","Upon occurrence","Repeat previously run patient samples or evaluate patient data",0
+Y,8880,"Control samples are run by ??test personnel??","As scheduled",,0
+Y,8890,"Control results are reviewed for acceptability (nonwaived)","Before patient testing",,0
+Y,8900,"Quality control data are reviewed monthly by the laboratory director or designee",Monthly,,0
+Y,8960,"Procedures for ??instrument?? startup and shutdown are available to ??test personnel??","At all times",,0
+Y,8970,"Appropriate function checks are performed for ??instrument??","Prior to testing patient samples","Detect drift, instability, or malfunction",0
+Y,8980,"Tolerance limits for function checks are acceptable for ??instrument??","As defined by manufacturer","Reviewed by Technical Consultant",0
+Y,8990,"Regular maintenance is performed","Per manufacturer instructions","Per manufacturer's instructions",0
+Y,9010,"Sample probes are evaluated for carryover","Initial system implementation","Known high patient sample followed by low samples",0
+Y,9030,"Temperatures are checked daily for equipment","As defined by manufacturer",,0
+Y,9040,"Acceptable ranges are defined for equipment temperatures","As defined by manufacturer",,0
+Y,9050,"Corrective actions are taken if equipment temperature exceeds the established range","Per manufacturer instruction","Corrective actions are documented for equipment",0
+Y,9080,"Contamination of blood gases with ambient air is prevented","Before analysis","Written procedure",0
+Y,9140,"??Instrument?? configuration option or forcing function is in place","At all times","Verified by the Technical Consultant",0
+Y,9200,"This risk is addressed in ??test?? written policy","At ??test?? implementation","??Test personnel?? have access to written policy",0
+Y,9210,"This risk is addressed in ??test personnel?? training","All ??test personnel?? prior to patient testing","Documentation of training records on file for all ??test personnel??",0
+Y,9220,"This risk is included in our ??test?? quiz during initial training","Initially administered to ??test personnel?? prior to patient testing","Satisfactory score on quiz",0
+Y,9230,"This risk is included in our ??test?? competency assessment quiz","Semi-annually administered to ??test personnel?? during first year of patient testing","Satisfactory score on quiz",0
+Y,9240,"This risk is included in our ??test?? competency assessment quiz","Annually administered to ??test personnel??","Satisfactory score on quiz",0
+Y,9250,"Monitoring for this risk occurs during direct observation of patient testing","Periodic monitoring of patient testing","Patient testing occurs as defined in ??test?? procedure",0
+Y,9260,"Monitoring for this risk occurs during direct observation of ??instrument?? maintenance","Periodic monitoring of ??instrument?? maintenance","??Instrument?? maintenance occurs as defined by manufacturer",0
+Y,9270,"Proficiency testing results are monitored for ??test??","3 events per year, 5 challenges per event","Successful proficiency testing performance for ??test??",0
+Y,9280,"Split sample analysis for ??test??",Weekly,"Acceptable correlation",0
+Y,9290,"Patient ??test?? results are monitored","Daily review of patient ??test?? results","Technical Consultant review",0
+Y,9300,"??Test personnel?? problem solving skills are evaluated for ??test??","Periodic monitoring","Technical Consultant review",0
+Y,9310,"Confirm CMS qualifications of competency assessor",Yearly,"Technical Consultant review",0
+Y,9340,"This risk is included in our ??test?? PPM competency assessment quiz","Semi-annually administered to ??test personnel?? during first year of patient testing","Satisfactory score on quiz",0
+Y,9370,"QMS monthly meetings and reports",Monthly,,0
+Y,9380,"The laboratory is licensed in accordance with law and regulation","As required","Required by inspecting agencies",0
+Y,9390,"Autoverification of patient results was validated","Initial system implementation; annually; system changes which may affect autoverification logic",,0
+Y,9400,"Noise level is controlled","Every test location",,0
+Y,9410,"Ungraded proficiency data are reviewed monthly by the laboratory director or designee",Monthly,"Laboratory director or designee review",0
+Y,9420,"Written policies and procedures for reagent storage and handling",,"Per manufacturer's instructions",0
+Y,9430,"Instrument calibration is performed","Per manufacturer's requirements","Per manufacturer's instructions",0
+Y,9440,"Appropriate (AMR) materials used",,"According to manufacturer's directions",0
+Y,9450,"Prompt notification to inspection agencies",,"Required by inspection agencies",0
+Y,9460,"Sign posted in prominent location or website for reporting of quality concerns","Posted at all times","Required by inspection agencies",0
+Y,9480,"Negative controls are performed","When indicated","Per manufacturer's instructions",0
+Y,9490,"Written amplicon decontamination procedures are followed","When indicated","Per manufacturer's instructions",0
+Y,9500,"Controls are run daily or per IQCP","On days of patient testing","Per applicable regulations",0
+Y,9510,"Molecular collections procedures are available","At all times to personnel collecting specimens","Per manufacturer's instructions",0
+Y,9520,"Pediatric Strep A antigen negative results are confirmed","When indicated","Per manufacturer's instructions",0
+Y,9540,,,,0
+Y,9550,"Validate ??test?? media for sterility, supporting growth, and biochemical reactivity when required","Each lot and shipment","Per CLIA regulations",0
+Y,9560,"Inspection of media shipments","Each shipment","Per manufacturer's instructions",0
+Y,9570,"Visual examination of all media","Each use","Per manufacturer's instructions",0
+Y,9580,"Established criteria for determining and interpreting zone diameter",,"Per manufacturer's instructions",0
+Y,9590,"Procedure for collecting molecular specimens to prevent cross-contamination",,"Per manufacturer's instructions",0
+Y,9600,"Preliminary reports are provided","As available","Per procedure manual",0
+Y,9610,"Establish policies and procedures for specimen collection and handling",,"Per manufacturer's instructions",0
+Y,9620,"Use of appropriate quality control organisms or reference cultures used to QC stains, reagents and susceptibility test methods",,"Per manufacturer's instructions",0
+Y,9630,"An alternative method of testing is used with resistant results",,"Per manufacturer's instructions",0
+Y,9640,"Established criteria for media and incubation conditions for each culture type, specimen, and/or body site",,"Per manufacturer's instructions",0
+Y,9650,"??Instrument?? procedure manual available to ??test personnel??","At all times  to personnel","Per manufacturer's instructions",0
+Y,9700,"Safety manual available","At all times","Per CLIA/OSHA regulations",0
+Y,9710,"??Instrument?? procedure manual available","At all times",,0
+Y,9740,"??Test?? procedure manual available","At all times","Per manufacturer's instructions",0
+Y,9780,"QMS monthly reports",Monthly,"Per QMS",0
+Y,9790,"Molecular tests are monitored for false positives",,"Per QMS",0
+Y,9800,"Controls are run daily or per IQCP stipulated frequency","On days of patient testing","Per applicable regulations",0
+Y,9810,"Final Reports are provided",,"Per manufacturer's instructions",0
+Y,9823,"Reagents are tested using ??LQC?? controls as soon as possible on receipt to verify stability","Every new shipment or lot of reagents","??LQC?? values are acceptable",0
+Y,6020,"Result review",Regularly,"Detection of result anomalies and inconsistencies indicative of error",0
+Y,9825,three,Test,Test,0
+Y,9826,"one one one",Monthly,"Detection of result anomalies and inconsistencies indicative of error",0
+Y,9827,fourrrr,Regularly(Test),"Within expected performance characteristics test",0
+Y,9828,"test qcp binod","test qcp binod",,0
+Y,9829,"Phlebotomy proficiency training",,,0
+Y,9830,oneeee,Test,Test,0
+Y,9730,"Controls are run daily or per Micro ICQP","On days of patient testing","Per applicable regulations",0
+Y,9832,"[Developer test ignore] testtttt",Monthly,"Required by inspecting agencies",0
+Y,9833,"[Developer test ignore] oneeee",Test,Test,0
+Y,9834,"[Developer test ignore] fourrrr",Regularly(Test),"Within expected performance characteristics test",0
+Y,9835,"[Developer test ignore] one one one",Monthly,"Detection of result anomalies and inconsistencies indicative of error",0
+Y,9836,"[Developer test ignore] three",Test,Test,0
+Y,9837,"[Developer test ignore] four",Test,Test,0
+Y,801,Cache,"Test Cache",Test123,0
+Y,9838,Json,2,criteria,0
+Y,9842,"??Test personnel?? have access to manufacturer Technical Support for troubleshooting","As needed",,0
+Y,9843,"testtttt Hello Citation",,,0
+Y,9844,Action,2,Criteria,0
+Y,9845,"Added QCP",2,1,0
+Y,9846,"test Validation",,,0
+Y,9847,test,,,0
+Y,9848,Test_1,260HZ,QCP1,0
+Y,9849,Test_2,270HZ,QCP2,0
+Y,9850,Test_3,275HZ,QCP3,0
+Y,9851,Test_4,275HZ,QCP4,0
+Y,9852,Test_5,260HZ,QCP5,0
+Y,9853,Test_6,275HZ,QCP6,0
+Y,9854,Test_7,270HZ,QCP7,0
+Y,9855,Test_8,260HZ,QCP8,0
+Y,9856,Test_9,260HZ,QCP9,0
+Y,9857,Test_10,275HZ,QCP10,0
+Y,9858,Test_11,275HZ,QCP11,0
+Y,9859,Test_12,270HZ,QCP12,0
+Y,9860,Test_12,270HZ,QCP13,0
+Y,9861,Test_13,270HZ,QCP13,0
+Y,9862,Test_14,270HZ,QCP14,0
+Y,9863,Test_15,275HZ,QCP15,0
+Y,9864,Test_16,275HZ,QCP16,0
+Y,9865,Test_17,275HZ,QCP17,0
+Y,9866,Test_18,275HZ,QCP18,0
+Y,9867,Test_19,275HZ,QCP19,0
+Y,9868,Test_20,275HZ,QCP20,0
+Y,9869,Test_21,275HZ,QCP21,0
+Y,9870,Test_22,275HZ,QCP22,0
+Y,9871,Test_23,275HZ,QCP23,0
+Y,9872,Test_24,260HZ,QCP24,0
+Y,9873,Test_25,260HZ,QCP25,0
+Y,9874,Test_26,260HZ,QCP26,0
+Y,9875,test_27,260HZ,QCP27,0
+Y,9876,Test_28,270HZ,QCP28,0
+Y,9877,Test_29,275HZ,QCP29,0
+Y,9878,Test_30,285HZ,QCP30,0
+Y,9879,"QCP (New)",,,0
+Y,9881,QCP-684,,,0
+Y,9884,QCP-806,,,0
+Y,9886,QCP-808,,,0
+Y,9887,QCP-281,,,0
+Y,9889,QCP-850,,,0
+Y,9890,QCP-191,,,0
+Y,9894,QCP-605,,,0
+Y,9895,QCP-247,,,0
+Y,9898,QCP-671,,,0
+Y,9899,QCP-222,,,0
+Y,9908,QCP-535,,,0
+Y,9909,QCP-113,,,0
+Y,9910,QCP-461,,,0
+Y,9911,QCP-434,,,0
+Y,9912,QCP-380,,,0
+Y,9913,QCP-618,,,0
+Y,9914,QCP-242,,,0
+Y,9916,QCP-713,,,0
+Y,9917,QCP-269,,,0
+Y,9920,QCP-785,,,0
+Y,9921,QCP-692,,,0
+Y,9922,QCP-980,,,0
+Y,9925,QCP-250,,,0
+Y,9926,QCP-715,,,0
+Y,9927,QCP-292,,,0
+Y,9928,QCP-105,,,0
+Y,9929,QCP-429,,,0
+Y,9930,QCP-201,,,0
+Y,9931,QCP-546,,,0
+Y,9935,"ACC Test",2,Test,0
+Y,9936,"QCP-118 All",10,"Test Criteria",0
+Y,9937,"QCP-181 All",10,"Test Criteria",0
+Y,9938,"QCP-892 All",10,"Test Criteria",0
+Y,9939,"QCP-716 All",10,"Test Criteria",0
+Y,9940,"QCP-933 All",10,"Test Criteria",0
+Y,9941,"QCP-424 All",10,"Test Criteria",0

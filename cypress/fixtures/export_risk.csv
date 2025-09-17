@@ -1,0 +1,723 @@
+﻿"Add To Risk Table",Category,"Risk Index","Hazard/RISK Statement","Risk Abbreviated Terms","Type Of Risk",Activity,"Common Risk","Specific Risk",Delete
+Y,T,1020,"Test is ordered outside the indications for use","IFU not followed","Instrument Risk",order,1,0,0
+Y,T,1030,"Test is ordered outside the limitations of use",Limitations,"Instrument Risk",order,1,0,0
+Y,S,1040,"Patient experiences adverse event during sample collection process","Adverse event","Instrument Risk",collection,1,0,0
+Y,S,1050,"Sample is collected from the wrong patient","Wrong patient","Instrument Risk","patient id",1,0,0
+Y,S,1060,"Wrong patient identifier is entered into the ??instrument??","Misidentify patient","Instrument Risk","patient id",1,0,0
+Y,S,1070,"Sample is mislabeled",Mislabeled,"Instrument Risk",collection,1,0,0
+Y,S,1080,"Patient did not fast prior to sample collection",Non-fasting,"Instrument Risk",collection,0,1,0
+Y,S,1090,"Collection supplies are not used within manufacturer's stated instructions","Inappropriate IFU collection device","Instrument Risk",collection,1,0,0
+Y,S,1100,"Sample is collected in an inappropriate collection device","Incorrect collection device","Instrument Risk",collection,1,0,0
+Y,S,1110,"Sample is contaminated with alcohol or cleansing agent from sample collection","Contamination with alcohol","Instrument Risk",collection,1,0,0
+Y,S,1120,"Sample quality is not optimal due to poor capillary puncture","Capillary puncture","Instrument Risk",collection,1,0,0
+Y,S,1130,"Sample quality is not optimal due to poor collection technique","Poor technique","Instrument Risk",collection,1,0,0
+Y,S,1140,"Sample is hemolyzed",Hemolysis,"Instrument Risk",collection,1,0,0
+Y,S,1150,"Incorrect sample type collected for analysis (venous, arterial, capillary, etc.)","Wrong sample type","Instrument Risk",collection,1,0,0
+Y,S,1160,"Syringe is not evacuated of ambient air","Ambient air contamination","Instrument Risk",collection,0,1,0
+Y,S,1170,"Evacuated tubes are not filled to capacity","Short sample","Instrument Risk",collection,0,1,0
+Y,S,1180,"Blood sample drawn into collection device with inappropriate anticoagulant","Wrong anticoagulant","Instrument Risk",collection,1,0,0
+Y,S,1190,"Sample is diluted with IV fluid","Sample dilution","Instrument Risk",collection,1,0,0
+Y,S,1200,"Sample contains air bubbles","Air bubbles","Instrument Risk",transfer,0,1,0
+Y,S,1210,"Sample is clotted","Clotted sample","Instrument Risk",transfer,1,0,0
+Y,S,1220,"Sample is not properly mixed before filling the ??consumable??","Improper sample mixing","Instrument Risk",collection,1,0,0
+Y,S,1221,"Sample is not properly mixed before introducing to the ??sample probe??","Improper sample dosing","Instrument Risk",collection,0,1,0
+Y,S,1230,"Sample not analyzed within appropriate time frame","Delayed sample analysis","Instrument Risk",transfer,1,0,0
+Y,S,1240,"Sample is improperly iced","Improper icing","Instrument Risk",transfer,1,0,0
+Y,T,1250,"Patient test is not repeated when result is inconsistent with patient status","Failure to repeat inconsistent patient results","Instrument Risk",result,1,0,0
+Y,T,1260,"Patient hematocrit exceeds manufacturer's specified limits for test system","Patient hematocrit exceeded limit","Instrument Risk",result,1,0,0
+Y,T,1270,"Patient is on a medication which interferes with the test system","Patient medications interfer.","Instrument Risk",result,1,0,0
+Y,T,1280,"Lipemic samples interfere with test system","Lipemic sample interfer.","Instrument Risk",result,0,1,0
+Y,T,1290,"Icteric samples interfere with test system","Icteric sample interfer.","Instrument Risk",result,0,1,0
+Y,T,1300,"Elevated white blood cells counts interfere with the test system","Elevated WBC interfer.","Instrument Risk",result,0,1,0
+Y,S,1310,"Sample is not collected using the Hologic Specimen Collection Kit","Inappropriate collection kit","Instrument Risk",collection,0,1,0
+Y,S,1320,"Sample is collected after culture specimens, digital cervical exam, or vaginal ultrasound","Order of draw","Instrument Risk",collection,0,1,0
+Y,S,1330,"Sample is collected within 24 hours of sexual intercourse","Timing of sample collection","Instrument Risk",collection,0,1,0
+Y,S,1340,"Sample is contaminated with lubricants, soaps, disinfectants, or creams","Sample contamination","Instrument Risk",collection,0,1,0
+Y,S,1350,"Sample is grossly bloody","Blood in sample","Instrument Risk",collection,0,1,0
+Y,S,1370,"Sample is diluted with IV heparin","IV heparin dilution","Instrument Risk",collection,0,0,0
+Y,S,1380,"Clinical specimens for COVID-19 are not collected according to CDC guidelines","CDC guidelines not met","Instrument Risk",collection,0,0,0
+Y,S,1400,"Sample test swab is not diluted with eluate or viral transport media","Dilution with VTM","Instrument Risk",collection,0,0,0
+Y,S,1410,"Standard precautions are not followed when handling clinical specimens","Specimen handling","Instrument Risk",collection,1,0,0
+Y,S,1430,"Throat swabs are not collected using the swabs provided in the ??test?? kit","Proper throat swab is used","Instrument Risk",collection,0,0,0
+Y,S,1440,"Rayon throat swabs are not used for throat specimens","Rayon swabs are avoided","Instrument Risk",collection,0,0,0
+Y,S,1450,"Nasal swab samples are not collected with the swabs provided in the ??test?? kit","Use of proper nasal swab","Instrument Risk",collection,0,0,0
+Y,S,1460,"Nasal swab samples are not collected with Ultra flocked swabs","Improper use: Ultra flocked swabs","Instrument Risk",collection,0,0,0
+Y,S,1470,"Nasal swab sampling does not include sampling from both nostrils","Both nostrils sampled","Instrument Risk",collection,0,0,0
+Y,S,1480,"Nasopharyngeal sample collection is not limited to sterile rayon, foam, polyester or flocked flexible-shaft NP swabs","NP sample swabs","Instrument Risk",collection,0,0,0
+Y,S,1490,"Nasopharyngeal samples are not collected from the space that is halfway from the nose to the tip of the ear","Improper sample collection","Instrument Risk",collection,0,0,0
+Y,S,1500,"Direct nasal, throat or nasopharyngeal swabs are not tested as soon as possible","Stale specimens","Instrument Risk",processing,0,0,0
+Y,S,1510,"After collection, the sample is stored in the original paper packaging and is not stored in a plastic tube with a cap","Sample storage","Instrument Risk",collection,0,0,0
+Y,S,1520,"??Test?? is not performed within one hour of sample collection","Delayed sample analysis","Instrument Risk",transfer,0,0,0
+Y,S,1530,"??Test?? sample is not at room temperature prior to test performance","Sample not at room temp","Instrument Risk",transfer,0,0,0
+Y,S,1540,"Excessive force is applied to ??test?? components during insertion into the ??instrument??","Improper insertion of test","Instrument Risk",transfer,0,0,0
+Y,S,1550,"Sample is diluted with liquid anticoagulants ","Anticoagulant dilution","Instrument Risk",collection,0,0,0
+Y,S,1560,"Sample is heat-activated","Heat-activated samples","Instrument Risk",storage,0,0,0
+Y,S,1570,"Sample contains fibrin due to incomplete clot formation","Fibrin present","Instrument Risk",processing,0,0,0
+Y,S,1580,"Serum/plasma samples are not free of bubbles before analysis (remove with applicator stick)","Bubbles in serum/plasma sample","Instrument Risk",processing,0,0,0
+Y,S,1590,"Specimens are not recentrifuged if they contain fibrin, red cells or other particulate matter","Samples with particulate matter","Instrument Risk",processing,0,0,0
+Y,S,1600,"Samples requiring recentrifugation are not transferred first to a secondary tube","Recentrifuge in secondary tube","Instrument Risk",processing,0,0,0
+Y,S,1610,"Frozen serum/plasma specimens are not completely thawed before analysis","Improper thawing of specimen","Instrument Risk",processing,0,0,0
+Y,S,1620,"Frozen serum/plasma specimens are not thoroughly mixed prior to analysis","Improper mixing of specimen","Instrument Risk",processing,0,0,0
+Y,S,1630,"Serum/plasma specimens are stored at room temperature for more than 2 days","Limited room temp storage","Instrument Risk","specimen storage",0,0,0
+Y,S,1640,"Serum/plasma specimens are stored at refrigerated temperature beyond 7 days","Refrig. storage time limit","Instrument Risk","specimen storage",0,0,0
+Y,S,1650,"If testing delayed more than 7 days, specimens are not stored frozen","Improper long-term storage","Instrument Risk","specimen storage",0,0,0
+Y,S,1660,"Specimens are not shipped in compliance with applicable state, federal and international regulations","Shipment requirements","Instrument Risk",processing,0,0,0
+Y,S,1670,"Personnel collecting specimens are not trained properly regarding the importance of specimen quality in generating accurate test results","Improper collection technique","Instrument Risk",collection,1,0,0
+Y,S,1680,"Sample is not collected as soon as possible after onset of symptoms","Inappropriate timing of collection","Instrument Risk",collection,0,0,0
+Y,S,1690,"Nasal, nasopharyngeal and oropharyngeal specimens are not collected using flocked or polyester-tipped swabs and/or are not immediately placed in 3mL of Copan Universal Transport Medium (UTM-RT) or BD Universal Transport (UVT)","UTM-RT & UTV media required","Instrument Risk",collection,0,0,0
+Y,S,1700,"Nasal specimens are not collected on flocked or polyester-tipped swabs and/or are not immediately placed into cobas® PCR Media tube","Improper collection swab","Instrument Risk",collection,0,0,0
+Y,S,1710,"Nasal specimens are not collected with cobas® PCR Media Uni Swab Sample Kit ","Improper nasal sample kit (Uni)","Instrument Risk",collection,0,0,0
+Y,S,1720,"Nasal specimens are not collected using cobas® PCR Media Dual Swab Sample Kit","Improper nasal sample kit (Dual)","Instrument Risk",collection,0,0,0
+Y,S,1730,"Swab is pre-wet in cobas® PCR Media before collection for cobas® Media Uni and/or Dual Swab Sample Kits","Swab is pre-wet in media","Instrument Risk",collection,0,0,0
+Y,S,1740,"Nasal specimen is collected using swabs other than flocked or polyester-tipped.   ","Improper specimen collection","Instrument Risk",collection,0,0,0
+Y,S,1750,"Specimens collected in cobas® PCR Media or 0.9% physiological saline are not stored a 2-8°C ","Improper specimen storage","Instrument Risk",processing,0,0,0
+Y,S,1760,"Specimens collected in cobas® PCR Media or 0.9% physiological saline are not processed within 48 hours","Delayed analysis of specimen","Instrument Risk",processing,0,0,0
+Y,S,1770,"Specimens collected in UTM-RT or UVT systems are not stored at 2-25°C","Improper specimen storage","Instrument Risk",processing,0,0,0
+Y,S,1780,"Specimens collected in UTM-RT or UVT systems are not processed within 48 hours","Delayed analysis of specimen","Instrument Risk",processing,0,0,0
+Y,S,1790,"If testing delayed more than 48 hours, specimens are not transported on dry ice, or stored at -70°C or colder until testing can occur","Special storage requirements","Instrument Risk",storage,0,0,0
+Y,S,1800,"Samples collected in Copan UTM-RT, BD UVT , cobas® PCR Media or 0.9% physiological saline are not transferred to cobas omni Secondary tube prior to analysis on ??instrument??","Failure to use Secondary tube","Instrument Risk",processing,0,0,0
+Y,S,1810,"Personnel do not take appropriate precautions when transferring specimens from primary to secondary tube","Caution required when transferring","Instrument Risk",processing,0,0,0
+Y,S,1820,"Pipettes without aerosol barrier or positive displacement tips are used to handle specimens","Aerosols are minimized","Instrument Risk",processing,0,0,0
+Y,S,1830,"Samples are not at room temperature prior to transfer","Sample transfer temperature","Instrument Risk",processing,0,0,0
+Y,S,1840,"Swab shafts are not evaluated for breakage prior to placement on ??instrument??","Swab shaft breakage","Instrument Risk",processing,0,0,0
+Y,S,1850,"cobas® PCR Media primary tubes with no swabs or two swabs are processed","Primary tube with no swab/two swabs tested","Instrument Risk",processing,0,0,0
+Y,S,1860,"Specimens with excess mucus are not vortexed to disperse the excess mucus","Excess mucus","Instrument Risk",processing,0,0,0
+Y,S,1870,"Specimens fail to meet minimum volume requirements for analysis","Minimum volume requirement","Instrument Risk",processing,1,0,0
+Y,S,1880,"Room temperature nasopharyngeal swab, nasal swab, and nasal wash/aspirate specimens stored in viral transport media or saline are tested beyond 8 hours from time of collection","RT storage time limit","Instrument Risk",processing,0,0,0
+Y,S,1890,"Refrigerated nasopharyngeal swab, nasal swab, and nasal wash/aspirate samples stored in viral transport media or saline are tested beyond 7 days from sample collection","Refrig. storage time limit","Instrument Risk",processing,0,0,0
+Y,S,1900,"Sample transport tube not properly mixed before addition to ??consumable??","Improper mixing:  transport tube","Instrument Risk",processing,0,0,0
+Y,T,2010,"Patient is injured during the test process","Patient injury","Instrument Risk",injury,0,0,0
+Y,T,2020,"Patient is given a nosocomial infection","Nosocomial infection","Instrument Risk",injury,1,0,0
+Y,T,2030,"Physician not satisfied with test system results","Physician confidence","Instrument Risk",misuse,1,0,0
+Y,T,2040,"Product recall affects test system or ??consumable?? ","Product recall","Instrument Risk",result,1,0,0
+Y,T,2050,"??Instrument?? is not validated before put into use for patient testing","Failure to validate instrument","Instrument Risk",readiness,1,0,0
+Y,T,2060,"Handheld is not validated before put into use for patient testing","Failure to validate handheld","Instrument Risk",configuration,0,1,0
+Y,T,2070,"Maintenance is performed improperly","Improper maintenance","Instrument Risk",maintenance,1,0,0
+Y,T,2080,"??Instrument?? is not regularly cleaned","Inadequate instr. cleaning","Instrument Risk",maintenance,1,0,0
+Y,T,2090,"??Optics?? not cleaned as specified by manufacturer","Optics not clean","Instrument Risk",maintenance,1,0,0
+Y,T,2100,"Thermal Probe fails","Thermal Probe fails","Instrument Risk",readiness,0,1,0
+Y,T,2110,"??Instrument?? malfunctions or is not calibrated properly","Instrument calibration malfunction","Instrument Risk",readiness,1,0,0
+Y,T,2120,"Self-test or calibration does not run or fails","Self-test fails","Instrument Risk",calibration,1,0,0
+Y,T,2130,"??EQC_int?? is not performed minimally per manufacturer's requirements","??EQC_int?? not performed","Instrument Risk",configuration,0,0,0
+Y,T,2140,"Software updates are not performed on ??instrument??","Outdated software version","Instrument Risk",configuration,1,0,0
+Y,T,2150,"Software is not updated on the handheld","Outdated software on handheld","Instrument Risk",configuration,0,1,0
+Y,T,2160,"??Instrument?? is not configured as expected","Instrument not properly configured","Instrument Risk",configuration,0,0,0
+Y,T,2170,"Cuvette path length or Hufner's number are entered incorrectly","Cuvette path length entered incorrectly","Instrument Risk",calibration,0,1,0
+Y,T,2180,"??Instrument?? is not charged or power is not available for patient testing","Inadequate power/charging","Instrument Risk",readiness,1,0,0
+Y,T,2190,"Patient test is performed on test system which does not meet requirements in order to perform testing","Test system requirements not met","Instrument Risk",readiness,0,0,0
+Y,T,2200,"??Instrument?? has been dropped","Instrument dropped","Instrument Risk",readiness,1,0,0
+Y,T,2210,"Sample is not run in the proper analysis mode on the ??instrument??","Improper sample analysis mode","Instrument Risk",misuse,1,0,0
+Y,T,2220,"Sample type (venous, arterial, capillary, etc.) is improperly identified on the ??instrument??","Improper ID of sample type","Instrument Risk",misuse,0,0,0
+Y,T,2230,"Testing performed does not match order from the authorized provider","Incorrect test performed","Instrument Risk",result,0,0,0
+Y,T,2240,"Incorrect patient temperature is entered into the ??instrument??","Incorrect patient temperature","Instrument Risk",result,1,0,0
+Y,T,2250,"Incorrect patient hemodynamic variables are entered into the ??instrument??","Hemodynamic variables are incorrect","Instrument Risk",result,0,1,0
+Y,T,2260,"??Instrument?? is not used on a stationary, horizontal surface","Instrument not stationary","Instrument Risk",result,1,0,0
+Y,T,2270,"??Instrument?? is disturbed during a patient test","Instrument disturbed","Instrument Risk",result,1,0,0
+Y,T,2280,"??Instrument?? does not show correlation with another ??instrument?? or clinical laboratory method","Lack of correlation with lab","Instrument Risk",result,1,0,0
+N,T,2290,"Use errors during pre-analytical or post-analytical test phases are not identified","Use errors not identified","Instrument Risk",result,1,0,0
+Y,T,2300,"Use errors during pre-analytical or post-analytical test phases are not identified","Use errors not identified","Instrument Risk",result,0,1,0
+Y,T,2310,"??Consumable?? is removed from the ??consumable port?? before the result is reviewed","Consumable removed prematurely","Instrument Risk",result,0,1,0
+Y,T,2320,"Patient results with error messages are not reported to the authorized provider","Error messages not reported","Instrument Risk",result,1,0,0
+Y,T,2330,"Patient results are no longer available in the ??instrument?? memory","Failure to retrieve stored Pt results","Instrument Risk",result,1,0,0
+Y,T,2340,"Patient result is reported outside of the ??instrument?? Analytical Measurement Range (AMR)","Results exceed AMR","Instrument Risk",result,1,0,0
+Y,T,2350,"Interfaced results not consistent with results displayed on ??instrument??","Inconsistent results on display","Instrument Risk",result,1,0,0
+Y,T,2360,"Patient data relevant to result interpretation is incorrect or missing","Relevant patient data missing","Instrument Risk",result,1,0,0
+Y,T,2370,"Test results are visually determined ","Results visually determined","Instrument Risk",result,0,0,0
+Y,T,2380,"Clinician fails to act on critical results","Did not act on crit. results","Instrument Risk",result,1,0,0
+N,T,2390,"Clinician fails to act on critical results","Failure to act on critical results","Instrument Risk",result,0,1,0
+Y,T,2400,"Liquid leaks into the ??instrument?? and causes damage to electrical components","Liquid damage to electrical components","Instrument Risk",,1,0,0
+Y,T,2410,"Calibration is not updated when changing reagent cassette lots","Improper calibration","Instrument Risk",,0,1,0
+Y,T,2420,"External incubation is not properly timed","Improper incubation time","Instrument Risk",,0,1,0
+Y,T,2430,"Clinician fails to act on a positive result","Failure to act on positive result","Instrument Risk",,0,1,0
+Y,T,2440,"??Consumable?? is not flat when test is performed","Consumable not horizontal ","Instrument Risk",,0,0,0
+Y,T,2450,"During dispensing of the extraction reagent, the dropper tip touches the card","Dropper tip contamination","Instrument Risk",,0,0,0
+N,T,2460,"The sample swab shaft is not rotated before closing the ??consumable??","Insufficient swab rotation","Instrument Risk",,0,0,0
+Y,T,2470,"Results are interpreted for ??test?? promptly at 15 minutes","Delayed test interpretation","Instrument Risk",,0,0,0
+Y,T,2480,"Prior to testing, ??test personnel?? fail to verify the presence of a blue line in the Control Line position of an untested ??consumable??","Insufficient internal control verification","Instrument Risk",,0,0,0
+Y,T,2490,"??Test?? use is inconsistent with manufacturer's intended use","Did not follow intended use req","Instrument Risk",,0,0,0
+Y,T,2500,"??Test?? results are not reported to appropriate public health authorities","Failure to report to health dept","Instrument Risk",,0,0,0
+Y,T,2510,"Universal precautions are not followed when using the ??test?? kit and contents","Universal precautions not followed","Instrument Risk",,0,0,0
+Y,T,2520,"??Test?? instructions are not followed for sample collection, storage and transport","Lack of compliance w/ manuf. Inst","Instrument Risk",,0,0,0
+Y,T,2530,"??Test?? reagent components are not maintained in sealed foil pouches until just before use.","Premature opening of foil pkg","Instrument Risk",,0,0,0
+Y,T,2540,"??Test?? reagent pieces are tampered with prior to or after use","Reagent piece tampering","Instrument Risk",,0,0,0
+Y,T,2550,"??Test?? kit is used beyond manufacturer's expiration date","Test used beyond exp","Instrument Risk",,0,0,0
+Y,T,2560,"Consumables from different ??test?? kit lots are mixed","Components from different lots are mixed","Instrument Risk",,0,0,0
+Y,T,2570,"Components from other ??instrument?? assays are used","Use of inappropriate reagents","Instrument Risk",,0,0,0
+Y,T,2580,"Personnel fail to use clean PPE and gloves prior to running each ??test??","Lack of clean PPE & gloves","Instrument Risk",,0,0,0
+Y,T,2590,"??Test?? components are used when dropped, cracked, damaged or open upon receipt","Consumables  damaged","Instrument Risk",,0,0,0
+Y,T,2600,"Personnel use scissors or sharp objects to open foil pouches","Sharps damage to test components","Instrument Risk",,0,0,0
+Y,T,2610,"The ??test?? Sample Receiver is left open prior to use","Sample Receiver left open","Instrument Risk",,0,0,0
+Y,T,2620,"When ??test?? Sample Receiver contents are breached, personnel fail to use a new Sample Receiver","Sample Receiver is breached","Instrument Risk",,0,0,0
+Y,T,2630,"Instrument display instructions are not followed when removing test pieces from ?? instrument??","Test pieces removed improperly","Instrument Risk",,0,0,0
+Y,T,2640,"Test components are reused or are used with multiple specimens","Reuse of test components","Instrument Risk",,0,0,0
+Y,T,2650,"The ??test?? Test Base and ??test?? Transfer Cartridge are disassembled after test completed","Cartridge disassembled","Instrument Risk",,0,0,0
+Y,T,2660,"Previous positive samples contaminate work area","Contamination of work area","Instrument Risk",,0,0,0
+Y,T,2670,"Failure to verify procedural control acceptability with each test","Procedural controls not verified","Instrument Risk",,0,0,0
+Y,T,2680,"Control swab acceptability is not verified before reporting patient results","Control swabs not verified","Instrument Risk",,0,0,0
+Y,T,2690,"??Test?? is not at room temperature before use","Test not at RT before use","Instrument Risk",,0,0,0
+Y,T,2700,"Samples are not at room temperature before use","Samples not at room temp","Instrument Risk",,0,0,0
+Y,T,2710,"Use of inappropriate viral transport media (VTM)","Inappropriate VTM media","Instrument Risk",,0,0,0
+Y,T,2720,"??Test personnel?? fail to verify that a pellet is visible at the bottom of the reaction tube in the test base","Reagent pellet in test base not verified","Instrument Risk",,0,0,0
+Y,T,2730,"Excessive force is used when inserting ??test?? components into the ??instrument??","Excessive force when inserting components","Instrument Risk",,0,0,0
+Y,T,2740,"The orange indicator on the ??test?? is not monitored during testing process to ensure that enough sample is applied","Improper dosing of sample","Instrument Risk",,0,0,0
+Y,T,2750,"Following ??test?? completion, gloves are not removed and discarded","Failure to replace gloves","Instrument Risk",,0,0,0
+Y,T,2760,"When ??test?? needs to be repeated, the original sample swab is re-eluted","Improper re-elution of repeat test samples","Instrument Risk",,0,0,0
+Y,T,2780,"??Instrument?? is not maintained on a clean, flat, level and stable surface","Instrument disturbed","Instrument Risk",,0,0,0
+N,T,2790,"??Instrument?? is dropped","Damage due to dropping","Instrument Risk",,0,0,0
+Y,T,2800,"Air flow to the ventilation openings on back and base of the ??instrument?? are restricted","Improper ventilation of instrument","Instrument Risk",,0,0,0
+Y,T,2810,"The ??instrument?? is moved while test is in progress","Movement during testing","Instrument Risk",,0,0,0
+Y,T,2820,"Rather than return the ??instrument?? for repair, ??test personnel?? dissemble or attempt to repair on own","Not repaired properly","Instrument Risk",,0,0,0
+Y,T,2830,"Cables are not disconnected when ??instrument?? is not used for an extended period of time","Proper storage of instrument","Instrument Risk",,0,0,0
+Y,T,2840,"Work area is contaminated with a previous positive sample causing false positive results for subsequent samples","Contamination of work area","Instrument Risk",,0,0,0
+Y,T,2850,"Personnel fail to conduct a performance check of the ??instrument?? after it is transported or moved to a new location","Damage during transport of instrument","Instrument Risk",,0,0,0
+Y,T,2860,"Un-approved cleaning agents are used with the ??instrument??","Inappropriate cleaners","Instrument Risk",,0,0,0
+Y,T,2870,"The exterior surfaces and the area visible under the open lid of the ??instrument?? are not cleaned daily","Failure to clean instrument daily","Instrument Risk",,0,0,0
+Y,T,2890,"Failure to clean ??instrument?? and surrounding areas immediately after possible patient contamination","Failure to clean after contamination","Instrument Risk",,0,0,0
+Y,T,2900,"Following software upgrades, ??test personnel?? fail to run a positive and negative control before patient testing is allowed","Failure to QC after software upgrades","Instrument Risk",,0,0,0
+Y,T,2910,"When applicable, the appropriate sample type is not selected","Sample inappropriate","Instrument Risk",,0,0,0
+Y,T,2920,"The CLIA complexity of the assay is not appropriate for the CLIA certificate of the laboratory","CLIA complexity issue","Instrument Risk",,0,0,0
+Y,T,2930,"Patient ID information is not confirmed prior to the start of the testing process","Failure to confirm patient ID","Instrument Risk",,0,0,0
+Y,T,2940,"Following a software upgrade on the ??instrument?? ??test personnel?? fail to run a successful positive and negative QC check","Failure to QC after software updates","Instrument Risk",,0,0,0
+Y,T,2950,"??Instrument?? times out during the testing process","Time outs during test","Instrument Risk",,0,0,0
+Y,T,2960,"??Instrument?? lid is opened during the testing process","Lid opened during testing","Instrument Risk",,0,0,0
+Y,T,2970,"??Instrument?? is not able to print results","Results not printed","Instrument Risk",,0,0,0
+Y,T,2980,"??Test?? with ??instrument?? is not performed in a Class II biosafety cabinet","Failure to test in hood","Instrument Risk",,0,0,0
+Y,T,2990,"Class II biosafety cabinet is not certified before use in patient testing ","Hood not certified","Instrument Risk",,0,0,0
+Y,T,7010,"Negative ??test?? results from patients with symptom onset beyond seven days are not confirmed with a molecular assay","Failure to confirm negative results ","Instrument Risk",result,0,0,0
+Y,T,7020,"??Test?? results are read after 30 mins","Delay in reading results","Instrument Risk",result,0,0,0
+Y,T,7030,"??Test?? kit extraction reagent is not added to the test card appropriately to ensure sufficient volume","Missing extraction reagent","Instrument Risk",misuse,0,0,0
+Y,T,7040,"Sample swab is not rotated prior to closing the ??consumable??","Inadequate swab rotation","Instrument Risk",misuse,0,0,0
+Y,T,7060,"Mupirocin interference with ??test?? results","Mupirocin interference","Instrument Risk",result,0,0,0
+Y,T,7070,"When processing multiple specimens successively or in batch mode, each specimen is not incubated the correct amount of time before the result is read","Improper incubation time of multiple samples","Instrument Risk",result,0,0,0
+Y,P,7080,ihjgfx,hgfx,"Instrument Risk",,1,1,0
+Y,T,7090,"The ??test?? file is not installed on ??instrument?? prior to performing assay","File is not installed prior to testing","Instrument Risk",implementation,0,0,0
+Y,S,7100,"If primary or aliquot tubes are used, sufficient sample is not verified prior to analysis","Insufficient sample volume","Instrument Risk",result,0,0,0
+Y,T,7110,"Routine maintenance is not performed on ??instrument??","Improper instrument maintenance","Instrument Risk",misuse,0,0,0
+Y,T,7120,"??Test personnel?? fail to confirm positive IgG results with another method","Failure to confirm pos IgG results","Instrument Risk",result,0,0,0
+Y,T,7130,"??Test personnel?? fail to confirm positive IgM results with another method","Failure to confirm pos IgM results","Instrument Risk",result,0,0,0
+Y,T,7140,"Manufacturer's instructions are not followed for performing ??instrument?? calibration","Improper instrument CAL","Instrument Risk",misuse,0,0,0
+Y,T,7150,"Results with ??instrument?? flags are not handled according to the ??Instrument?? Operation Manual","Instrument flags missed","Instrument Risk",result,0,0,0
+Y,T,7160,"??Test?? is used to screen units of blood for SARS-CoV-2 infection","Used for screening blood products","Instrument Risk",misuse,0,0,0
+Y,T,7170,"??Test?? is used with specimens from patients that contain HAMA which may produce falsely elevated or depressed results","HAMA interference","Instrument Risk",result,0,0,0
+N,T,7180,"??Consumable?? is not inspected prior to use to ensure that there are no signs of leakage","Consumable leakage","Instrument Risk",misuse,0,0,0
+Y,T,7190,"Spills on ??instrument?? are not cleaned according to instructions in the ??instrument?? User Guide","Instrument spills","Instrument Risk",contamination,0,0,0
+Y,T,7200,"??Instrument?? is not properly maintained","Improper maintenance","Instrument Risk",operation,0,0,0
+Y,T,7210,"Sample pools exceed 6 samples when using ??test??","Max sample pool size exceeded","Instrument Risk",operation,0,0,0
+Y,T,7220,"Process for pooled samples does not ensure traceability between individual sample IDs and pool IDs","Inadequate sample traceability within pools","Instrument Risk",operation,0,0,0
+Y,T,7230,"Sample handing causes cross-contamination between pools and original patient samples","Cross-contamination from pooling","Instrument Risk",operation,0,0,0
+Y,T,7240,"Sample has inadequate volume for pool construction and any resolution testing","Inadequate sample vol for pool testing","Instrument Risk",operation,0,0,0
+Y,T,7250,"Incomplete mixing after the addition of pool samples to the secondary tube","Incomplete mixing: pooled samples","Instrument Risk",operation,0,0,0
+Y,T,7260,"Result report omits comment that pooling was used during testing","Result report comment omitted","Instrument Risk",result,0,0,0
+Y,T,7270,"Positive or presumptive positive pool samples are not retested as individual samples","Positive pool samples not retested","Instrument Risk",result,0,0,0
+Y,T,7280,"Batch is not evaluated for validity based on confirmation of no flags","Improper batch validation","Instrument Risk",result,0,0,0
+Y,T,7290,"Batches with flags are considered valid and retesting of those entire batches does not occur","Failure to retest batches w flags","Instrument Risk",result,0,0,0
+Y,T,7300,"Before switching from one technology to the next, laboratories fail to perform method correlation studies to qualify technology differences","Failure to perform overlap studies","Instrument Risk",result,0,0,0
+Y,T,7310,"Samples that contain substances that may interfere with nucleic acid isolation and PCR amplification are not identified","Interfering substances not ID'd","Instrument Risk",result,0,0,0
+Y,T,7320,"??Consumable?? used in laminar flow hood is not covered during test development","Consumable is not covered in hood","Instrument Risk",misuse,0,0,0
+Y,T,7330,"Once swab has been processed in extraction reagent and tube capped, the sample is not added to the ??consumable?? within 20 minutes","Delay adding sample to ??consumable??","Instrument Risk",misuse,0,0,0
+Y,T,7340,"??Test?? results are not retrieved from ??instrument?? display within 15 minutes","Delay in retrieving results from display ","Instrument Risk",result,0,0,0
+Y,T,7350,"??Consumable?? is not read by ??instrument?? at 15 minutes","??Instrument?? times-out","Instrument Risk",result,0,0,0
+Y,T,7360,"??Consumable?? is not read by ??instrument?? before 20 minutes when testing in batch mode","Instrument times-out in batch mode","Instrument Risk",result,0,0,0
+Y,T,7370,"Inadequate sample volume added to ??consumable?? from the extraction reagent tube","Inadequate sample volume","Instrument Risk",misuse,0,0,0
+Y,T,7380,"The extraction reagent tube is squeezed too close to the tip, resulting in contamination or insufficient sample","Improper dispensing of sample","Instrument Risk",misuse,0,0,0
+Y,T,7390,"??Instrument?? is touched or disturbed during the testing process","Instrumen disturbed during test","Instrument Risk",misuse,0,0,0
+Y,T,7400,"CDC guidelines are not followed for changing gloves between specimen handling and specimen processing","Failure to change gloves","Instrument Risk",contamination,0,0,0
+Y,T,7410,"CDC guidelines are not followed for cleaning work area between specimen handling and  specimen processing","Unclean work area","Instrument Risk",contamination,0,0,0
+Y,T,7420,"??Test?? has not been evaluated for use in patients without signs and symptoms of respiratory infection","Test not approved for screening ","Instrument Risk",misuse,0,0,0
+Y,T,7430,"Negative results are not treated as presumptive and are not confirmed with an FDA-authorized molecular assay","Failure to confirm negatives","Instrument Risk",result,0,0,0
+Y,T,7440,"The ??consumable?? lid is opened after addition of specimen","Consumable lid opened during test","Instrument Risk",misuse,0,0,0
+Y,T,7450,"??Consumable?? has been shaken or dropped","Consumable shaken/dropped","Instrument Risk",misuse,0,0,0
+Y,T,7460,"Sample id is written on ??consumable?? lid or barcode label "," ID recorded on lid/ barcode label","Instrument Risk",misuse,0,0,0
+Y,T,7470,"??Consumable?? with damaged barcode is used","Damaged barcode on consumable","Instrument Risk",misuse,0,0,0
+Y,T,7480,"??Consumable?? with damaged reaction tube is used","Damaged reaction tube","Instrument Risk",misuse,0,0,0
+Y,T,7490,"Processed ??consumable?? is reused","Processed consumable reused","Instrument Risk",misuse,0,0,0
+Y,T,7500,"Single-use disposable pipette is reused","Single-use pipette reused","Instrument Risk",misuse,0,0,0
+Y,T,7510,"Test not started within 30 minutes of addition of sample to ??consumable??","Delay processing sample","Instrument Risk",,0,0,0
+Y,T,7520,"Software/Antimicrobial reporting rules not followed","Improper Antimicrobial reporting ","Instrument Risk",,0,0,0
+Y,R,3010,"Substantial change by manufacturer in reagent properties or system components cause clinical errors","Significant manuf. changes","Instrument Risk",result,1,0,0
+Y,R,3020,"Cuvette path length is not entered properly for each new lot","Inappropriate cuvette path length","Instrument Risk",calibration,0,1,0
+Y,R,3030,"Consumable or reagent is not available when needed","Reagent supply issues","Instrument Risk",,1,0,0
+Y,R,3040,"??Consumable?? desiccant fails during storage","Failure of desiccant","Instrument Risk",storage,0,1,0
+Y,R,3050,"??Consumable?? is stored improperly","Improper storage of consumable","Instrument Risk",storage,1,0,0
+Y,R,3060,"??Consumable?? is used beyond manufacturer's expiration date","Consumable expired","Instrument Risk",storage,1,0,0
+Y,R,3070,"??Consumable?? is used beyond the room temperature expiration date","RT expiration date exceeded","Instrument Risk",,0,0,0
+Y,R,3080,"??Consumable?? is mishandled","Mishandled consumable","Instrument Risk",transfer,1,0,0
+Y,T,3090,"Cuvette is not filled at a 45 degree angle","Improper angle when dosing cuvette","Instrument Risk",transfer,0,1,0
+Y,T,3100,"Sample is forced into the ??consumable??","Forced sample","Instrument Risk",transfer,1,0,0
+Y,R,3110,"??Consumable?? is underfilled or overfilled","Over/ underfilling of consumable","Instrument Risk",transfer,1,0,0
+Y,S,3120,"Sample has bubbles in the cuvette light path","Sample has bubbles","Instrument Risk",transfer,0,1,0
+Y,T,3130,"??Consumable?? is inserted into the ??consumable port?? with blood on the outside","Blood residue on outside of consumable","Instrument Risk",transfer,1,0,0
+Y,T,3140,"Cuvette with bulging vent patch is inserted into the test chamber","Bulges in vent patch","Instrument Risk",transfer,0,1,0
+Y,R,3150,"Syringe is removed from the ??consumable?? before inserting into the test chamber","Improper syringe removal","Instrument Risk",transfer,0,1,0
+Y,R,3160,"??Consumable?? is reused","Consumable reused","Instrument Risk",misuse,1,0,0
+Y,T,3170,"??LQC?? is not performed on everyday of pt testing","Missed ??lqc??","Instrument Risk",misuse,1,0,0
+Y,T,3180,"??LQC?? is used which is not recommended by the manufacturer","??LQC?? not approved","Instrument Risk",misuse,0,1,0
+Y,T,3190,"??LQC?? is used as a calibrator","??LQC?? used as calibrator","Instrument Risk",misuse,1,0,0
+Y,R,3200,"??LQC?? is not properly refrigerated","Improper storage of ??lqc??","Instrument Risk",storage,1,0,0
+Y,R,3210,"??LQC?? is used beyond the manufacturer's expiration date","Use of expired ??lqc??","Instrument Risk",storage,1,0,0
+Y,R,3220,"??LQC?? is used beyond the room temperature expiration date","??LQC?? RT exp. exceeded","Instrument Risk",storage,1,0,0
+Y,R,3230,"??LQC?? is not properly brought to room temperature before use","??LQC?? not at RT","Instrument Risk",transfer,1,0,0
+Y,R,3240,"??LQC?? is improperly mixed","??LQC?? is improperly mixed","Instrument Risk",transfer,1,0,0
+Y,T,3250,"??LQC?? results fall outside of established ranges","??LQC?? out-of-range","Instrument Risk",result,1,0,0
+Y,T,3260,"??LQC?? limits not properly established ","Inappropriate ??lqc?? limits","Instrument Risk",result,1,0,0
+Y,R,3270,"??CVC?? is used which is not recommended by the manufacturer","Use of non-recommended ??cvc??","Instrument Risk",misuse,1,0,0
+Y,R,3280,"??CVC?? are not properly refrigerated","Inappropriate ??cvc?? storage","Instrument Risk",storage,1,0,0
+Y,R,3290,"??CVC?? are used beyond the manufacturer's expiration date","??CVC?? expiration date exceeded","Instrument Risk",storage,1,0,0
+Y,R,3300,"??CVC?? are used beyond the room temperature expiration date","??CVC?? RT exp. exceeded","Instrument Risk",storage,1,0,0
+Y,R,3310,"??CVC?? are not brought to room temperature before use","??CVC?? not brought to RT","Instrument Risk",transfer,1,0,0
+Y,R,3320,"??CVC?? improperly mixed","??CVC?? improperly mixed","Instrument Risk",transfer,1,0,0
+Y,R,3330,"??CVC?? results fall outside of expected range","??CVC?? out-of-range","Instrument Risk",result,1,0,0
+Y,T,3340,"??CVC?? do not verify the reportable range of ??instrument??","Reportable range not verified","Instrument Risk",misuse,1,0,0
+Y,T,3350,"??EQC_int?? is not performed on every day of patient testing","??EQC_int?? not performed","Instrument Risk",,0,0,0
+Y,T,3360,"??EQC_ext?? is not performed on every day of patient testing","??EQC_ext?? not performed ","Instrument Risk",misuse,0,1,0
+Y,R,3370,"Optical quality control filter serial number does not match the instrument serial number","Incorrect Optical QC serial #","Instrument Risk",misuse,0,1,0
+Y,T,3380,"Optical Quality Control results fall outside of expected values range","Optical QC out-of-range","Instrument Risk",result,0,1,0
+Y,T,3390,"??EQC_ext?? results fall outside of expected value range","??EQC_ext?? out-of-range","Instrument Risk",result,1,0,0
+Y,R,3400,"??Consumable?? was exposed to adverse conditions during shipment","Reagents compromised during shipment","Instrument Risk",storage,1,0,0
+Y,T,3410,"??LQC?? lot or serial number is not properly entered","Improper ??lqc?? identifier","Instrument Risk",,0,1,0
+Y,T,3420,"Cross contamination of ??LQC?? occurs with either control materials or patient samples","Cross contamination: QC and Pt samples","Instrument Risk",,0,1,0
+Y,R,3430,"??EQC_ext?? is not stored properly","??EQC_ext?? improperly stored","Instrument Risk",,0,1,0
+Y,R,3440,"Reagent degradation impacts accuracy of patient results","Reagent degradation","Instrument Risk",,1,0,0
+Y,R,3450,"??Consumable?? must be flat when performing test","??Consumable?? not kept flat during use","Instrument Risk",,0,0,0
+Y,R,3460,"During dispensing of the extraction reagent, dropper tip touches card","Contamination from dropper tip","Instrument Risk",,0,0,0
+Y,R,3470,"The sample swab shaft is not rotated before closing the ??consumable??","Failure to rotate swab","Instrument Risk",misuse,0,0,0
+Y,R,3480,"Results are not interpreted for ??test?? promptly at 15 minutes","Results not interpreted at 15 mins","Instrument Risk",result,0,0,0
+Y,R,3490,"Test card is not maintained in sealed foil pouch until just before use","Test cards not stored in foil pouches","Instrument Risk",misuse,0,0,0
+Y,R,3500,"Test card is used even if foil pouch is damage or opened","Foil pouch damage","Instrument Risk",misuse,0,0,0
+Y,R,3510,"??Test?? components are not discarded as biohazardous waste","Improper biohazardous disposal","Instrument Risk",,0,0,0
+Y,R,3520,"??EQC_int?? not recorded for each run","QC not recorded","Instrument Risk",,0,0,0
+Y,R,3530,"??LQC?? not properly frozen","Improper storage temp of QC","Instrument Risk",storage,0,0,0
+Y,R,3540,"??LQC?? used beyond refrigerated expiration date (60 days)","Use of expired QC","Instrument Risk",storage,0,0,0
+Y,R,3550,"??Test?? not stored per manufacturer's instructions at 2-30°C","Test kit improperly stored","Instrument Risk",storage,0,0,0
+Y,R,3560,"??Test?? is used beyond manufacturer's expiration date","Use of outdated ??Test??","Instrument Risk",misuse,0,0,0
+N,R,3570,"??Device?? components are not at room temperature before use","Test used at improper temp","Instrument Risk",storage,0,0,0
+Y,R,3580,"??Device?? not at room temperature prior to performing test","Improper test temp equil","Instrument Risk",misuse,0,0,0
+Y,R,3590,"??Test?? reagent pellet is not verified as visible in the bottom of the reaction tube prior to performing test","Reagent is not verified","Instrument Risk",misuse,0,0,0
+Y,R,3600,"Excessive force is applied to components of the ??test?? during insertion into ID NOW instrument","Excessive force applied","Instrument Risk",misuse,0,0,0
+Y,R,3610,"??Test?? control swabs are not run with each new shipment","Improper QC frequency","Instrument Risk","quality control",0,0,0
+Y,R,3620,"??LQC?? material is not handled as potentially infectious","QC not treated as biohazard","Instrument Risk",handling,0,0,0
+Y,R,3630,"??LQC?? material is not protected from light","QC not protected from light","Instrument Risk",storage,0,0,0
+Y,R,3670,"??LQC?? material is not checked for signs of deterioration","QC deterioration","Instrument Risk",storage,0,0,0
+Y,R,3680,"??Calibrator?? not handled as potentially infectious","CAL not treated as biohazard","Instrument Risk",handling,0,0,0
+Y,R,3690,"??Calibrator?? not protected from light","CAL is exposed to light","Instrument Risk",storage,0,0,0
+Y,R,3700,"??Calibrator?? not properly frozen","Improper storage of calibrator","Instrument Risk",storage,0,0,0
+Y,R,3710,"??Calibrator?? not properly refrigerated","Calibrator not properly refrigerated","Instrument Risk",storage,0,0,0
+Y,R,3720,"??Calibrator?? used beyond manufacturer's expiration date","Used CAL  beyond expiry date","Instrument Risk",storage,0,0,0
+Y,R,3730,"??Calibrator?? used beyond refrigerated expiration date (60 days)","Use of CAL beyond refrig expiry","Instrument Risk",storage,0,0,0
+Y,R,3740,"??Calibrator?? not completely thawed before use","CAL insufficiently thawed","Instrument Risk",transfer,0,0,0
+Y,R,3750,"??Calibrator?? not properly mixed","Calibrator improperly mixed","Instrument Risk",transfer,0,0,0
+Y,R,3760,"Upon receipt, the unopened ??consumable?? is not inverted to ensure that reagent covers all sides of the bottles within the cartridge","Improper consumable mixing ","Instrument Risk",storage,0,0,0
+Y,R,3770,"After ??consumable?? mixing, reagent is not placed upright for one hour before use to allow bubbles to dissipate","Reagent bubbles not dissipated ","Instrument Risk",storage,0,0,0
+Y,R,3780,"When handling ??consumable?? ??test personnel?? do not change gloves that have been in contact with human serum or plasma","Contamination of gloves with serum/plasma","Instrument Risk",handling,0,0,0
+Y,R,3790,"If ??consumable?? is removed from ??instrument?? the ??consumable?? is not properly stored with new replacement caps in upright position at 2-8 C","Improper offboard storage of ??consumable??","Instrument Risk",storage,0,0,0
+Y,R,3800,"??Consumable?? is not inspected prior to use to ensure that there are no signs of leakage","Consumable leakage","Instrument Risk","quality control",0,0,0
+Y,R,3810,"??LQC?? not processed with each batch of testing","Missed ??lqc?? for each batch","Instrument Risk","quality control",0,0,0
+Y,R,3820,"??LQC?? not run with each new lot","Missed ??lqc?? with each new lot","Instrument Risk","quality control",0,0,0
+Y,R,3830,"During dispensing of the extraction reagent, dropper tip touches card","Contamination of extraction reagent","Instrument Risk",storage,0,0,0
+Y,R,3840,"??LQC?? is exposed to multiple freeze thaw cycles","Control freeze/thaw cycles","Instrument Risk",handling,0,0,0
+Y,R,3850,"??LQC?? not mixed by vortexing","Control improperly mixed","Instrument Risk",handling,0,0,0
+Y,R,3860,"??LQC?? not treated the same as unknown specimens","Control not treated as patient specimen","Instrument Risk",handling,0,0,0
+Y,R,3870,"??Test?? components are not left at room temperature for 60 minutes before use","Improper temp of reagents","Instrument Risk",storage,0,1,0
+Y,E,4010,"??Instrument?? is not used within expected temperature and humidity range","Temp and humidity issues","Instrument Risk",environment,1,0,0
+Y,E,4020,"??Instrument?? is not properly ventilated or positioned away from obstructions","Improper ventilation of instrument","Instrument Risk",environment,0,0,0
+Y,E,4030,"Noise affects ??test personnel?? concentration during testing","Audible distractions","Instrument Risk","human factors",1,0,0
+Y,E,4040,"Poor lighting or glare affects data entry or result interpretation","Poor lighting/glare","Instrument Risk","human factors",1,0,0
+Y,E,4050,"Workplace clutter affects ??test personnel?? concentration or test process","Workplace clutter","Instrument Risk","human factors",1,0,0
+Y,E,4060,"Inadequate workspace affects ??test personnel?? concentration or test process","Inadequate workspace","Instrument Risk","human factors",1,0,0
+Y,E,4070,"Personal devices affect ??test personnel?? concentration during testing","Distraction from personal devices","Instrument Risk",distraction,1,0,0
+Y,E,4080,"Conversation affects ??test personnel?? concentration during testing","Distraction from personal conversations","Instrument Risk",distraction,1,0,0
+Y,E,4090,"Short staffing affects ??test personnel?? concentration during testing","Short staffing","Instrument Risk",distraction,1,0,0
+Y,E,4100,"Interruptions affects ??test personnel?? concentration during testing","Personnel interruptions","Instrument Risk",distraction,1,0,0
+Y,E,4110,"Fibers, fluids, dust, or debris affect the test system","Fluids, dust, debris","Instrument Risk",,1,0,0
+Y,E,4120,"Test system used outside manufacturer's requirements for altitude (barometric pressure)","Altitude effects","Instrument Risk",environment,1,0,0
+Y,E,4130,"Improper reagent shipping temperature","Improper shipping temp. of reagent","Instrument Risk",environment,1,0,0
+Y,E,4140,"Reagents damaged during shipment","Reagents damaged during shipment","Instrument Risk",environment,1,0,0
+Y,E,4150,"Using this device near strong sources of electromagnetic radiation (for example, intentionally unprotected radio-electric sources), which could interfere with the operation of the equipment.","EMR interference","Instrument Risk",environment,0,1,0
+Y,R,4160,"The bottle is not held vertically when dispensing the AST Indicator Solution","Improper storage of consumable","Instrument Risk",misuse,0,1,0
+Y,R,4170,"Accession barcode labels affixed incorrectly to a BD Phoenix panel","Barcode procedure failure","Instrument Risk",misuse,0,1,0
+Y,R,4180,"Organism suspensions were not prepared with the BD BBL CrystalSpec Nephelometer, the BD PhoenixSpec Nephelometer, or the BD Phoenix AP Instrument. ","Failure to follow proper procedures","Instrument Risk",misuse,0,1,0
+Y,R,4190,"BD Phoenix panels were refrigerated or frozen. (i.e. not stored at room temperature)","Improper storage of  panels","Instrument Risk",misuse,0,1,0
+Y,R,4200,"AST or ID Broth tubes not stored at 225 °C.","Improper storage of ??consumable??","Instrument Risk",misuse,0,1,0
+Y,R,4210,"AST indicator solution is used when the dark blue color had changed from normal color.","Expired AST indicator solution","Instrument Risk",misuse,0,0,0
+Y,E,4220,"The ??instrument?? is used outside of an operating environment that is 15°C to 30°C (50°F to 86°F)","Temperature excursions","Instrument Risk",environment,0,0,0
+Y,E,4230,"The ??instrument?? is used outside of an operating environment that is 10% to 80% relative humidity (non-condensing)","Humidity excursions","Instrument Risk",environment,0,0,0
+Y,E,4240,"When not in use, the ??instrument?? is not stored at temperature between 15°C to 30°C (50°F to 86°F)","Improper instrument storage temp","Instrument Risk",environment,0,0,0
+Y,E,4250,"When not in use, the ??instrument?? is not stored between 10% to 80% relative humidity (non-condensing)","Improper instrument storage humidity","Instrument Risk",environment,0,0,0
+Y,E,4260,"The ??instrument?? is not maintained on a clean, flat, level and stable surface within reach of an electrical outlet","Failure to perform test on level, stable surface","Instrument Risk",environment,0,0,0
+Y,E,4270,"The ??instrument?? is placed in a location where air vents located on the back of the instrument are restricted","Blocked air vents","Instrument Risk",environment,0,0,0
+Y,E,4280,"The ??instrument?? is placed in direct sunlight","Direct sunlight","Instrument Risk",environment,0,0,0
+Y,E,4290,"Prior to use, the ??instrument?? is not allowed to equilibrate to room temperature for at least 30 minutes","Improper RT equil. of instrument","Instrument Risk",environment,0,0,0
+Y,E,4300,"Results reported inappropriately after equipment failure, incubator malfunction, etc.","Equipment/incubator malfunctions","Instrument Risk",environment,0,0,0
+Y,P,5010,"Unqualified or untrained ??test personnel?? perform patient testing","Improper Qualification/Training","Instrument Risk",operator,1,0,0
+Y,P,5020,"??Test personnel?? are unaware of resources available for troubleshooting","Inadequate troubleshooting","Instrument Risk",operator,1,0,0
+Y,P,5030,"??Test personnel?? fail to read the operator manual before operating the ??instrument??","Operator manual access","Instrument Risk",,0,1,0
+Y,P,5040,"??Test personnel?? fail to follow the prompts for ??instrument?? ","Failure to follow instrument prompts","Instrument Risk",operation,1,0,0
+Y,P,5050,"??Test personnel?? uses Shutting Down without authorization for the ??instrument?? ","Improper shut down","Instrument Risk",operation,0,1,0
+Y,P,5060,"??Test personnel?? unplugs ??instrument?? to shut down instrument","Instrument is unplugged","Instrument Risk",operation,0,1,0
+Y,P,5070,"??Test personnel?? fail to manually enter results that do not cross over to the interface","Failure to manually enter results","Instrument Risk",results,0,1,0
+Y,P,5080,"??Test personnel?? do not repeat suspect results","Failure to repeat test ","Instrument Risk",results,1,0,0
+Y,P,5090,"Unqualified ??test personnel?? perform patient testing","Testing by unqualified personnel","Instrument Risk",,0,0,0
+Y,P,5100,"Untrained ??test personnel?? perform patient testing","Testing by untrained personnel","Instrument Risk",,0,0,0
+Y,P,5110,"Failure of ??test personnel?? to run ??test?? control swabs prior to performing patient testing","Failure to run test control swabs","Instrument Risk",,0,0,0
+Y,P,5120,"??Test personnel?? fail to adhere to manufacturer's guidelines for timing regarding reagent insertion and confirmation","Improper test timing","Instrument Risk",,0,0,0
+Y,P,5130,"??Test personnel?? are not familiar with troubleshooting for ??instrument?? errors","Troubleshooting issues","Instrument Risk",,0,0,0
+Y,P,5140,"??Instrument?? User Manual is not available to users","Limited access to User Manual","Instrument Risk",,0,0,0
+Y,P,5150,"??Test personnel?? are not proficient at performing rapid lateral flow assays","Lack of ??test personnel?? proficiency","Instrument Risk",,0,0,0
+Y,P,5160,"??Test personnel?? are not able to discern color to interpret test results","Color blindness","Instrument Risk",,0,0,0
+Y,P,5170,"??Test personnel?? fail to correctly interpret results for ??test??","Inappropriate result Interpretation","Instrument Risk",,0,0,0
+Y,P,5180,"??Test personnel?? fail to repeat ??test?? with invalid results","Failure to repeat invalid tests","Instrument Risk",,0,0,0
+Y,P,5190,"??Test personnel?? run inappropriate specimen types for the assay","Inappropriate specimens","Instrument Risk",,0,0,0
+Y,P,5200,"Laboratory gloves, laboratory coats and eye protection are not worn when handling samples and reagents","Inadequate PPE","Instrument Risk",operator,0,0,0
+Y,P,5210,"??Test personnel?? fail to wash hands thoroughly after handling samples and kit reagents","Improper hand washing","Instrument Risk",operator,0,0,0
+Y,P,5220,"??Test personnel?? fail to clean and disinfect all laboratory work surfaces with a 0.5% sodium hypochlorite prepared solution","Improper disinfection of work surfaces","Instrument Risk",operator,0,0,0
+Y,P,5230,"??Test personnel?? fail to follow the proper procedures for ??test?? performance","Improper procedure","Instrument Risk",operator,0,0,0
+Y,S,1910,"??Test?? is not performed within 15 minutes of arterial sample collection","Arterial samples tested within 15 min.","Instrument Risk",handling,0,1,0
+Y,S,1920,"??Test?? is not performed within 5 minutes of capillary sample collection","Capillary samples tested within 5 min.","Instrument Risk",handling,0,1,0
+Y,S,1930,"Insufficient sample volume","Insufficient sample volume","Instrument Risk",collection,0,1,0
+Y,S,1940,"Repeat test of same sample","Repeat test of same sample","Instrument Risk",misuse,0,1,0
+Y,P,5240,"Release of other CV/iQM results when pH, PO2 and PCO2 were not acceptable","QC review failures","Instrument Risk","quality control",0,1,0
+Y,S,1950,"Sample not mixed well with 3-5 inversions","Improper mixing of samples","Instrument Risk",Handling,1,0,0
+Y,S,1960,"Sample not mixed one more time for 15 sec before placing in ??instrument??","Improper sample introduction","Instrument Risk",Handling,1,0,0
+Y,S,1970,"Urine sample testing after 24 hours at room temperature","Testing of expired RT samples","Instrument Risk",handling,1,0,0
+Y,S,1980,"Urine sample tested after 14 days stored at 2-8° C","Testing of expired refrigerated samples","Instrument Risk",handling,1,0,0
+Y,P,5250,"Releasing of test results when no lines are seen or just the Sample Line is seen","Disregard of internal controls","Instrument Risk",operator,1,0,0
+Y,P,5260,"External Quality Controls frequency not performed as written in the IQCP risk assessment","Inappropriate freq running ext. QC","Instrument Risk",operator,1,0,0
+Y,P,5270,"The urine specimen to be tested, did not completely","Short sample","Instrument Risk",operator,1,0,0
+Y,P,1990,"Collecting of patient samples from unapproved patient categories","Off label sample collection","Instrument Risk",misuse,1,0,0
+Y,S,5290,"Failure to ID organism isolates that may interfere with test results","Interfering organisms","Instrument Risk",handling,1,0,0
+Y,S,5280,"Wrong preservative or transport media used for collection","Inappropriate preservative/transport media","Instrument Risk",handling,1,0,0
+Y,P,5300,"Reporting of QC results as a patient sample","Reporting of QC results as a pt.sample","Instrument Risk",misuse,1,0,0
+Y,P,5310,"Inappropriate amount of sample added ","Inappropriate sample volume","Instrument Risk",misuse,1,0,0
+Y,P,5320,"Running a patient sample as a control or vice versa","Swapping of QC and patient samples","Instrument Risk",misuse,1,0,0
+Y,P,5330,"Swab not properly inserted","Swab not properly inserted","Instrument Risk",misuse,1,0,0
+Y,P,5340,"Testing Positive control as Negative control and vice versa","Swapping of positive/negative controls","Instrument Risk",misuse,1,0,0
+Y,P,5350,"Did not apply external control material to Test Card","Missed external control application","Instrument Risk",misuse,1,0,0
+Y,P,5360,"??Device?? not closed properly ","Device not closed properly","Instrument Risk",misuse,1,0,0
+Y,P,5370,"Testing non-valid sample types","Testing non-valid sample types","Instrument Risk",misuse,1,0,0
+Y,P,5380,"Capillary samples are not tested immediately","Delay testing capillary samples","Instrument Risk",handling,0,1,0
+Y,P,5390,"EDTA Whole blood sample not tested ASAP","Delay testing EDTA Whole blood ","Instrument Risk",handling,0,1,0
+Y,P,5400,"EDTA Whole blood sample tested after 3 days stored at 2 -30°C","Testing expired EDTA Whole blood ","Instrument Risk",handling,0,1,0
+Y,S,5410,"Room temperature nasopharyngeal swab, or nasal wash/aspirate specimens stored in viral transport media or saline, are tested beyond 4 hours from time of collection","Testing expired pt.swabs","Instrument Risk",handling,0,1,0
+Y,S,5420,"Refrigerated nasopharyngeal swab samples stored in viral transport media or saline are tested beyond 48 hours from sample collection","Testing expired room temp samples","Instrument Risk",handling,0,1,0
+Y,S,5430,"Refrigerated nasal wash/aspirate samples stored in viral transport media or saline are tested beyond 24 hours from sample collection","Testing expired refrigerated samples","Instrument Risk",handling,0,1,0
+Y,S,5440,"The BinaxNOW Strep A Card test was performed before inoculating culture plate with swab","Failure to inoculate culture plate","Instrument Risk",handling,0,1,0
+Y,S,5450,"Throat swab samples stored in viral transport media or saline ","Throat swabs improperly stored","Instrument Risk",handling,0,1,0
+Y,S,5460,"Refrigerated throat swabs are tested beyond 72 hours from sample collection","Testing expired samples","Instrument Risk",handling,0,1,0
+Y,S,5470,"Throat swabs not placed into a dry test tube","Throat swabs handled inappropriately","Instrument Risk",handling,1,1,0
+Y,S,5480,"Wrong ??test?? media type used","Inappropriate test media","Instrument Risk",handling,1,0,0
+Y,S,5490,"Isolate was not pure","Isolate not pure","Instrument Risk",handling,1,0,0
+Y,S,5500,"Inadequate inoculation suspension","Inadequate inoculation suspension","Instrument Risk",handling,1,0,0
+Y,S,5510,"Inappropriate species used on the test system","Inappropriate species tested","Instrument Risk",handling,1,0,0
+Y,R,3880,"Improper QC Organism storage and preparation","Improper storage of QC organisms","Instrument Risk",misuse,1,0,0
+Y,R,3890,"QC Organism failure error","QC Organism failure error","Instrument Risk",misuse,1,0,0
+Y,P,5520,"Failure to perform confirmatory tests for strains of Klebsiella spp. and E. coli when using VITEK® 2 ESBL Test ","Failure to perform confirmatory tests ","Instrument Risk",misuse,0,1,0
+Y,R,5530,"??Consumable?? desiccant is missing","Consumable desiccant missing","Instrument Risk",handling,1,0,0
+Y,P,5540,"Powdered gloves used when using instrument","Use of powdered gloves","Instrument Risk",handling,1,0,0
+Y,P,5550,"Glass test tubes used on instrument","Glass tube interference","Instrument Risk",misuse,0,1,0
+Y,P,5560,"The age of the suspension, before loading the instrument for AST testing, was greater than one hour for VITEK® 2 60 or VITEK® 2 XL, and greater than 30 minutes for the VITEK® 2 Compact","Delay in loading suspension ","Instrument Risk",misuse,0,1,0
+Y,P,5570,"Direct clinical specimen or other sources containing mixed flora was tested","Testing samples with mixed flora","Instrument Risk",handling,1,0,0
+Y,P,5580,"Failure to test with alternative method with a resistant organism, as listed in Instructions for Use","Not using alternative method ","Instrument Risk",misuse,0,1,0
+Y,P,5581,"Failure to enter barcodes into Flex Panel Entry program prior to first use of Susceptibility Card","Failure to enter Susceptibility Card barcodes","Instrument Risk",misuse,0,1,0
+Y,T,7530,"??Test?? with ??instrument?? is not performed in a Class III biosafety cabinet","Testing not performed in hood","Instrument Risk",handling,0,1,0
+Y,T,7540,"Class III biosafety cabinet is not certified before use in patient testing ","Hood not certified","Instrument Risk",handling,0,1,0
+Y,R,5600,"Open tubes are stored for more than two weeks","Use of expired tubes","Instrument Risk",misuse,0,1,0
+Y,R,5610,"Failure to equilibrate Single Packs to room temperature prior to opening (approx. 15 minutes if stored at +4°C or approx. 30 minutes if stored at -20°C)","Failure to equilibrate packs to RT","Instrument Risk",misuse,0,1,0
+Y,R,5620,"??Test?? reagent components are damaged or not properly maintained  until just prior to use","Improper maintenance of reagent components","Instrument Risk",misuse,0,1,0
+Y,R,5630,"Individual spots on target slides used more than once","Multiple use of individual spots on slide","Instrument Risk",misuse,0,1,0
+Y,R,5640,"Failure to check cardboard shipping container for reagent leaks","Damage to reagents during shipping","Instrument Risk",misuse,0,1,0
+Y,R,5650,"Reuse of single use strips","Reuse of single use strips","Instrument Risk",misuse,0,1,0
+Y,P,5660,"Clinically irrelevant organisms tested","Clinically irrelevant organisms tested","Instrument Risk",misuse,1,0,0
+Y,P,5670,"Failure to consider additional species in select patient types (e.g., immunosuppressed)","Failure to consider additional species","Instrument Risk",misuse,1,0,0
+Y,P,5680,"Physician requests for testing of isolates that are not clinically relevant, leading to inappropriate and misleading results","Testing of inappropriate isolates","Instrument Risk",misuse,1,0,0
+Y,P,5690,"Use incorrect panel/card for select organism","Use of incorrect panel/card","Instrument Risk",misuse,1,0,0
+Y,P,5700,"Report comments missing or inappropriate for the culture","Missing or inappropriate comments","Instrument Risk",misuse,1,0,0
+Y,P,5710,"Delay in transmission of results","Delay in transmission of results","Instrument Risk",misuse,1,0,0
+Y,P,5720,"Results delayed beyond that expected for organism type","Delay in reporting results","Instrument Risk",misuse,1,0,0
+Y,P,5730,"QC out of control due to improper QC strain maintenance","Improper QC strain maintenance","Instrument Risk",misuse,1,0,0
+Y,P,5740,"Use of contaminated AST media","Use of contaminated AST media","Instrument Risk",misuse,1,0,0
+Y,P,5750,"Use of nonviable colonies","Use of nonviable colonies","Instrument Risk",misuse,1,0,0
+Y,P,5760,"Over inoculation or under inoculation","Over/under inoculation","Instrument Risk",misuse,1,0,0
+Y,P,5770,"Instrument pipettor malfunction","Instrument pipettor malfunction","Instrument Risk",misuse,1,0,0
+Y,P,5780,"Removing disk and/or media from container prior to room temperature equilibration ","Insufficient RT equil. of container","Instrument Risk",misuse,1,0,0
+Y,P,5790,"Improper streaking of plate leading to lawn of growth that is not confluent","Improper streaking of plate","Instrument Risk",misuse,0,1,0
+Y,T,5800,"Disks relocated after placing on plate","Disks relocated after placing ","Instrument Risk",misuse,0,1,0
+Y,T,5810,"Disks placed too close together so that zones are overlapping","Disks too close","Instrument Risk",misuse,0,1,0
+Y,T,5820,"AST plates not incubated under the appropriate atmospheric conditions based on the organism","Improper atmosph.incub. AST plates","Instrument Risk",misuse,0,1,0
+Y,T,5830,"AST plates not incubated for the recommended time range based on the organism","Inappropriate incubation of AST plates","Instrument Risk",misuse,0,1,0
+Y,T,5840,"Failure to appropriately interpret zones of inhibition","Inappropriate interpretation of inhib. zones ","Instrument Risk",misuse,0,1,0
+Y,T,5850,"Incorrect interpretation of zone of inhibition leading to erroneous results","Incorrect interpretation of inhibit. zones","Instrument Risk",misuse,0,1,0
+Y,T,5860,"Computer entry errors when describing interpretations/zone size values","Computer entry errors","Instrument Risk",misuse,0,1,0
+Y,T,5870,"Failure to capture and track complaints/suggestions regarding delayed results and/or potential erroneous results","Failure track complaints/suggestions","Instrument Risk",misuse,0,1,0
+Y,T,5880,"Media contamination or physical defects","Media contam./physical defects","Instrument Risk",misuse,1,0,0
+Y,T,5890,"Failure to inoculate/streak correctly (i.e., no isolated colonies) or incubate in a timely manner","Improper inoculation/streaking ","Instrument Risk",misuse,1,0,0
+Y,T,5900,"??Test?? media is contaminated","Test media is contaminated","Instrument Risk",misuse,1,0,0
+Y,T,5910,"??Test?? media unexpectedly fails to support the growth of a microorganism  ","Media doesn't support growth","Instrument Risk",misuse,1,0,0
+Y,T,5920,"Selective ??test?? media unexpectedly fails to inhibit expected microorganisms","Selective media fails to inhibit microorganism","Instrument Risk",misuse,1,0,0
+Y,T,5930,"Poor ??test?? media quality","Poor test  media quality","Instrument Risk",misuse,0,1,0
+Y,T,5940,"Sample is contaminated when collected","Sample is contaminated","Instrument Risk",misuse,1,0,0
+Y,T,5950,"Amplicon contamination","Amplicon contamination","Instrument Risk",misuse,1,0,0
+Y,T,5960,"Failure to confirm pediatric Strep A antigen negative results","Failure to confirm neg results ","Instrument Risk",misuse,1,0,0
+Y,T,5961,"Failure to operate and calibrate the mass spectrometer by a defined process","Mass spec operating issues","Instrument Risk",misuse,1,0,0
+Y,T,5970,"Failure to calibrate the mass spectrometer as specified in the ??test??  Manual","Mass Spec calibration issues","Instrument Risk",misuse,1,0,0
+Y,T,5980,"Appropriate control organisms are not tested each day of patient testing","Control organisms not tested daily","Instrument Risk",misuse,1,0,0
+Y,R,5990,"Failure to use reagent grade Reagents","Failure to use reagent grade reagents","Instrument Risk",misuse,1,0,0
+Y,R,6001,"Failure to use ??consumable?? appropriate to the instrument and assay","Inappropriate consumables","Instrument Risk",misuse,1,0,0
+Y,R,6010,"Inappropriate blood culture vials used ","Inappropriate blood culture vials ","Instrument Risk",misuse,1,0,0
+Y,P,6020,"Failure to check blood cultures for growth at least twice a day","Failure to check blood culture growth","Instrument Risk",misuse,1,0,0
+Y,P,6030,"Non-sterile technique used for blood culture collection","Non-sterile blood culture collection","Instrument Risk",misuse,1,0,0
+Y,S,6040,"Blood culture contamination rates not tracked","Blood culture contam. not tracked","Instrument Risk",misuse,1,0,0
+Y,S,6041,"Inappropriate collection volume for blood culture","Inapprop blood culture volume","Instrument Risk",misuse,1,0,0
+Y,T,6050,"Prior to testing, ??test personnel?? fail to verify the presence of a pink-to-purple line in the Control Line position of an untested ??consumable??","Failure to verify internal control","Instrument Risk",misuse,0,1,0
+Y,S,6070,"NP and Throat swabs stored 4°C kept longer than 72 hours after collection in Universal  Transport Media (UTM) or equivalent","Expiry of 4°C stored specimens","Instrument Risk",processing,0,1,0
+Y,S,6080,"Specimens kept longer 72 hours of collection, were not  stored at -70°C or lower.","Improper specimen storage","Instrument Risk",processing,0,1,0
+Y,S,6090,"Failure to incubate samples at 65° for 30 minutes","Improper incubation","Instrument Risk",misuse,0,1,0
+Y,R,4310,"An opened AST Indicator Solution used after it had been stored over 14 days  at 28 °C.","Expired AST Indicator Solution","Instrument Risk",misuse,0,1,0
+Y,T,4320,"Daily verification calibration not performed","Calibration Ver not performed","Instrument Risk",misuse,0,1,0
+Y,T,4330,"Panels moved or loaded when the instrument is in the isolation mode.","Panels moved  isolation ","Instrument Risk",misuse,0,1,0
+Y,T,4340,"Splashed inoculum caused inaccurate results","Contamination from splash","Instrument Risk",misuse,0,1,0
+Y,T,4350,"Panels are loaded when the Testing icon is live","Loading panels during live test mode ","Instrument Risk",misuse,0,1,0
+Y,T,4360,"The accession number or isolate number was modified ","Accession number modified","Instrument Risk",misuse,0,1,0
+Y,T,4370,"Did not confirm Custom Breakpoint Difference Report after upgrade","Breakpoint Diff. report not confirmed","Instrument Risk",misuse,0,1,0
+Y,R,4380,"Reagent leak or visual turbidity present ","Reagents compromised during shipping","Instrument Risk",misuse,0,1,0
+Y,S,4390,"Direct clinical specimen tested","Inappropriate sample type","Instrument Risk",misuse,0,1,0
+Y,R,4400,"Marks and smudges obscure the bottom/top of the panel","Panel obscured","Instrument Risk",misuse,0,1,0
+Y,T,4410,"The gram stain reaction of the isolate was not tested","Gram stain not performed before testing","Instrument Risk",misuse,0,1,0
+Y,R,4420,"Panels were not inoculated within 2 hours of being removed from the pouch","Panel inoculated  >2 hrs. of opening pouch","Instrument Risk",misuse,0,1,0
+Y,R,4430,"Bacterial suspension in ID Broth or Inoculum Broth was used beyond 60 minutes of preparation","Inoculated broth used beyond 60 min","Instrument Risk",misuse,0,1,0
+Y,R,4440,"AST Indicator stored at room temperature for more than 2 hours","Improper storage of AST Indicator Solution","Instrument Risk",misuse,0,1,0
+Y,R,4450,"More than 1 drop of AST Indicator is added to AST broth","Too much AST indicator added to broth","Instrument Risk",misuse,0,1,0
+Y,R,4460,"Mixed AST solution is not stored in the dark or stored beyond 8 hrs","Mixed AST solution stored improperly","Instrument Risk",storage,0,1,0
+Y,R,4470,"AST Indicator Solution is exposed to light longer than 2 hours.","Excess AST Indicator light exposure","Instrument Risk",storage,0,1,0
+Y,T,4480,"Panels are not inoculated within 30 minutes of the time that the AST broth inoculum is prepared.","AST broth not inoculated within 30 min","Instrument Risk",misuse,0,1,0
+Y,T,4490,"Panels are not loaded into the instrument within 30 minutes of inoculation.","Inoc. panels not loaded within 30 min","Instrument Risk",misuse,0,1,0
+Y,T,4500,"AST-S Broth and AST-S Indicator Solution are not used for the BD Phoenix Strep panel","Improper broth or indicator solutions","Instrument Risk",misuse,0,1,0
+Y,T,4510,"Panels are not kept in the inoculation station (after inoculation) until the excess fluid has been completely absorbed","Panels not allowed to absorb ","Instrument Risk",misuse,0,1,0
+Y,T,4520,"QC organisms are not subcultured at least twice on two consecutive days onto TSA with 5% Sheep Blood agar prior to use","Improper subculture of QC organisms","Instrument Risk",misuse,0,1,0
+Y,T,4530,"Disinfectants containing phenol are used on ??instrument??","Improper disinfectants","Instrument Risk",misuse,0,1,0
+Y,T,4540,"??Instrument?? was not warmed up at least 2 hours prior to use","Instrument improperly warmed","Instrument Risk",misuse,0,1,0
+Y,T,4550,"??Instrument?? was used outside of 59-104° F (15-40°C)","Improper operating temperature","Instrument Risk",misuse,1,0,0
+Y,T,4560,"??Instrument?? was used outside of 10-90% relative humidity (non-condensing)","Interference from humidity","Instrument Risk",misuse,1,0,0
+Y,T,4570,"The maximum altitude was above 15,000 feet (4500 meters) for the ??instrument??","Altitude effect","Instrument Risk",misuse,1,0,0
+Y,R,3001,"??EQC_ext?? was not repeated when patient blood results are still lower or higher than expected","??EQC_ext?? not repeated","Instrument Risk",misuse,1,0,0
+Y,R,3002,"??EQC_ext?? was not run for each new operator","??EQC_ext?? not run for new operator","Instrument Risk",misuse,1,0,0
+Y,R,3003,"??EQC_ext?? was not run before using the ??instrument?? for the first time","??EQC_ext?? not tested for first time","Instrument Risk",misuse,1,0,0
+Y,T,4580,"??Instrument?? surface was not cleaned/disinfected after each patient","Instrument not cleaned/disinfected","Instrument Risk",misuse,1,0,0
+Y,R,3004,"??Consumable?? was used 180 days after opening ","Expired consumable","Instrument Risk",storage,1,0,0
+Y,R,3005,"??EQC_ext?? was used 90 days after opening","Expired ??EQC_ext??","Instrument Risk",storage,1,0,0
+Y,T,6060,"Battery has exceeded its expiration date, swelling, cracking, or damage to the battery case, leakage, or failure to hold a proper charge","Bad battery used ","Instrument Risk",misuse,1,0,0
+Y,T,6061,"Inappropriate cleaning fluids used or incorrect mixing concentrations","Improper cleaners","Instrument Risk",misuse,1,0,0
+Y,T,6062,"Bleach used to clean the instrument","Bleach used to clean","Instrument Risk",misuse,1,0,0
+Y,T,6063,"Did not wait at least 10 to 15 seconds prior to restarting instrument","Restarted instrument too soon","Instrument Risk",misuse,1,0,0
+Y,T,6064,"User did not use Quick Access button to unlock door","Did not use Quick Access button","Instrument Risk",misuse,1,0,0
+Y,R,3006,"??Consumable?? container was opened or damaged during transport","Damaged consumable container","Instrument Risk",handling,1,0,0
+Y,S,3007,"Neonate cord blood used for testing","Cord blood used ","Instrument Risk",collection,1,0,0
+Y,S,3008,"Results used in the diagnosis or screening of diabetes mellitus","Off label use","Instrument Risk",collection,1,0,0
+Y,T,3009,"Did not use the specially designed battery pack provided by Roche Diagnostics","Improper battery","Instrument Risk",misuse,1,0,0
+Y,T,3011,"Blood applied to the top of the ??consumable??","Improper blood application","Instrument Risk",misuse,1,0,0
+Y,T,3012,"Replaced code keys while the code keyreader is still flashing","Code key errors","Instrument Risk",misuse,1,0,0
+Y,T,3013,"The meter or base unit is immersed in liquid","Meter or base immersed in liquid","Instrument Risk",misuse,1,0,0
+Y,R,3014,"Test strips used outside of 6195°F (1635 °C)","Temperature interference","Instrument Risk",storage,1,0,0
+Y,R,3015,"Test strips used outside of 1080% relative humidity","Humidity interference","Instrument Risk",storage,1,0,0
+Y,R,3016,"Test strips stored outside of 3986°F (430°C)","Strips stored at improper temp","Instrument Risk",storage,1,0,0
+Y,R,3017,"??Test?? stored outside of 2-37°C","Test stored at improper temp","Instrument Risk",storage,1,0,0
+Y,P,3018,"Failure to read internal control blue line ","Blue line QC error","Instrument Risk",misuse,1,0,0
+Y,P,3019,"Failure to read ??test?? results at 10 minutes","Delay in result reading","Instrument Risk",results,1,0,0
+Y,P,3021,"Failure to read ??test?? results at 5 minutes","Delay in result reading","Instrument Risk",results,1,0,0
+Y,P,3022,"Failure to read internal control grey/purple line ","Grey/purple line QC error","Instrument Risk",misuse,1,0,0
+Y,P,3023,"Failure to test CSF ??test?? sample immediately","Failure to test immediately","Instrument Risk",results,1,0,0
+Y,P,3024,"??EQC_ext?? was used 60 days after opening","Expired ??EQC_ext??","Instrument Risk",storage,1,0,0
+Y,P,3025,"??EQC_ext?? was not run every 30 days","??EQC_ext?? is not run every 30 days","Instrument Risk",misuse,1,0,0
+Y,R,3026,"??EQC_ext?? was used 18 months from date of manufacture","??EQC_ext?? expired","Instrument Risk",storage,1,0,0
+Y,R,3027,"CLSI Clinical Laboratory Reagent Water CLRW was not used","Improper water used","Instrument Risk",misuse,1,0,0
+Y,R,3028,"??LQC?? is was not mixed for a minimum of 25 minutes prior to first use","Improper mixing of ??lqc?? upon first use ","Instrument Risk",misuse,1,0,0
+Y,R,3029,"??LQC?? is not mixed for at least 5 minutes ","Improper mixing of ??lqc??","Instrument Risk",misuse,1,0,0
+Y,T,3031,"??Instrument?? not cleaned with 7 % bleach monthly","??Instrument?? not cleaned monthly","Instrument Risk",misuse,1,0,0
+Y,T,3032,"??Instrument?? needle not replaced after 30,000 tests","??Instrument?? needle not changed","Instrument Risk",misuse,1,0,0
+Y,T,3033,"??Instrument?? placed on a surface free of vibration","Vibratatory interference","Instrument Risk",misuse,1,0,0
+Y,T,3034,"Tubes not tightly capped when introduced to ??instrument??","Tubes not tightly capped ","Instrument Risk",misuse,1,0,0
+Y,T,3035,"Sickle cell anemia or multiple myeloma patient samples tested","Use on inappropriate patient types","Instrument Risk",misuse,1,0,0
+Y,P,3036,"Patient sample not mixed for 3 minutes before testing ","Sample inadequately mixed","Instrument Risk",misuse,1,0,0
+Y,P,3037,"Failure to confirm negative ??test?? results by bacterial culture","Culture confirmation not performed","Instrument Risk",misuse,1,0,0
+Y,P,3038,"Failure to keep the Calibration Cassette in the provided storage pouch between uses","Calibration CAL mishandled ","Instrument Risk",misuse,1,0,0
+Y,P,3039,"??Test?? kit not stored at 15-30 °C","Inappropriate ??test?? kit storage","Instrument Risk",misuse,1,0,0
+Y,P,3041,"Patient throat swabs are held longer than 24 hrs. at 15-30° C","Inappropriate RT storage of throat swab","Instrument Risk",misuse,1,0,0
+Y,P,3042,"Patient throat swabs held longer than 48 hrs. at 2-8° C","Improper refrig. storage of throat swab","Instrument Risk",misuse,1,0,0
+Y,R,3043,"??Consumable?? was exposed to direct sunlight","Exposure to sunlight","Instrument Risk",misuse,1,0,0
+Y,R,3044,"??Consumable?? was frozen","??Consumable?? was frozen","Instrument Risk",misuse,1,0,0
+Y,R,3040,"Room temperature nasopharyngeal swab, nasal swab, and nasal wash/aspirate specimens stored in viral transport media or saline are tested outside of the timeframe for sample collection as specified in IFU 11","Testing expired RT stored samples 11",,injury,1,1,0
+Y,S,3046,"Refrigerated nasopharyngeal swab, nasal swab, and nasal wash/aspirate samples stored in viral transport media or saline are tested outside of the timeframe for  sample collection as specified in IFU","Testing expired refrig. specimens","Instrument Risk",handling,1,0,0
+Y,P,3047,"Visibly bloody or viscous patient sample is tested","Bloody or viscous sample used","Instrument Risk",misuse,1,0,0
+Y,P,3048,"Incorrect pipette used to add patient sample","Incorrect pipette","Instrument Risk",misuse,1,0,0
+Y,R,3049,"Test ??consumable?? is not maintained in sealed foil pouch until just before use","Foil pouch opened too soon","Instrument Risk",misuse,1,0,0
+Y,P,3051,"Nasal and nasopharyngeal swab samples stored 2-8°C or at room temperature are tested beyond 48 hours from sample collection","Expired RT or refrig. stored samples","Instrument Risk",handling,1,0,0
+Y,P,3052,"Sample poured from the Reagent Tube into the","Sample poured from reagent tube","Instrument Risk",misuse,1,0,0
+Y,P,3053,"Reading test results before 15 min. or after 30 min.","Read results at improper time","Instrument Risk",misuse,1,0,0
+Y,P,3054,"User writes on barcode on the ??consumable??","Writing on barcode","Instrument Risk",misuse,1,0,0
+Y,P,3055,"??Test?? not stored between 2-8° C","Improper temp storage of ??test??","Instrument Risk",misuse,1,0,0
+Y,P,3056,"Serum used after 5 days when stored at 2-8° C","Serum not handled properly","Instrument Risk",handling,1,0,0
+Y,P,3057,"Plasma used after 24 hrs. when stored at 2-8° C","Plasma not handled properly","Instrument Risk",handling,1,0,0
+Y,T,3058,"Results not read ± 30 seconds of 8 min. ","Results not read at proper time","Instrument Risk",misuse,1,0,0
+Y,S,3059,"Hyperlipemic or Hyperhemolyzed sample used","Compromised sample used","Instrument Risk",handling,1,0,0
+Y,R,3061,"Reagents are not stored in the dark and are used after 6 hours at (18-30°C)","Improper storage of reagents","Instrument Risk",handling,1,0,0
+Y,R,3062,"Magnetic particles not mixed properly","Magnetic particles not mixed","Instrument Risk",handling,1,0,0
+Y,R,3063,"Integral did not remain in the reagent area for 30 min. before use","Improper equilibration of Integral","Instrument Risk",handling,1,0,0
+Y,S,3064,"Serum is not stored at -20°C as specified in IFU","Improper storage of serum","Instrument Risk",handling,1,0,0
+Y,R,3065,"??EQC_ext?? was not performed each day of use","??EQC_ext?? not tested","Instrument Risk",handling,1,0,0
+Y,R,3066,"Calibration was not performed for new lot of reagent","Calibration not performed","Instrument Risk",misuse,1,0,0
+Y,R,3067,"LIAISON® XL Starter Kit or Wash Buffer is exposed to direct sunlight","Exposure to direct sunlight","Instrument Risk",handling,1,0,0
+Y,R,3068,"Change of reagent component (even with the same lot number)","Change of reagent","Instrument Risk",misuse,1,0,0
+Y,T,3069,"??Instrument?? is not properly grounded or checked for electrical current leakage","??Instrument?? not grounded","Instrument Risk",misuse,1,0,0
+Y,R,7541,"This is test","This is test","Instrument Risk",handling,1,1,0
+Y,,7547,cdxxsx,,"Instrument Risk",,1,1,0
+Y,T,7548,"1010 - Test is performed without an order",,"Instrument Risk",,1,1,0
+Y,S,7549,gjhsagdgsahsa,Test,"Instrument Risk",,1,1,0
+Y,S,7550,"Test from Binod","Test from binod 1","Instrument Risk","patient id",1,1,0
+Y,,7551,"3050 - ??Consumable?? is stored improperly",,"Instrument Risk",,1,1,0
+Y,R,7552,twotwo,twoooo,"Instrument Risk",,1,1,0
+Y,P,7553,"test test test",test,"Instrument Risk",,1,0,0
+Y,R,7554,threeeee,three,"Instrument Risk",,1,0,0
+Y,T,7556,"??Instrument?? Reagent septums not used","??Instrument?? Reagent septums not used","Instrument Risk",operation,1,0,0
+Y,S,7558,"[Developer test Inogre]  ??Reagent??  bottle inverted after septum application","No order","Instrument Risk",order,1,0,0
+Y,S,7559,"[Developer test Inogre]  ??Instrument?? Reagent septums not used","??Instrument?? Reagent septums not used","Instrument Risk",operation,1,0,0
+Y,S,7560,"[Developer test Inogre]   threeeee",three,"Instrument Risk",,1,0,0
+Y,S,7561,"[Developer test Inogre]   test test test",test,"Instrument Risk",,1,0,0
+Y,S,7562,"[Developer test Inogre]   twotwo",twoooo,"Instrument Risk",,1,1,0
+Y,S,7563,"[Developer test Inogre]   3050 - ??Consumable?? is stored improperly",Test,"Instrument Risk",,1,1,0
+Y,S,7564,"[Risk test Inogre]  ??Reagent??  bottle inverted after septum application","No order","Assay Risk",order,1,0,0
+Y,S,8001,"[Developer Test] Test is performed without an order","No order","Instrument Risk",order,1,0,0
+Y,R,8002,"Risk (Anuja)","Risk (Anuja)Risk (Anuja)Risk (Anuja)","Instrument Risk",order,1,1,0
+Y,R,8003,"New Risk",New,"Instrument Risk",environment,1,0,0
+Y,S,44446,hjsadhasdhasgd,test,"Instrument Risk",maintenance,1,0,0
+Y,P,44447,dgdf,dfsbsdfb,"Assay Risk",,0,0,0
+Y,R,1111,Anuja,Anuja,"Assay Risk",collection,0,1,0
+Y,E,44448,"This is a new risk","This is  test","Instrument Risk",implementation,1,1,0
+Y,R,8181,"Anuja Cache","This is a test ","Assay Risk",,1,1,0
+Y,E,44449,"Json Ins",Json,"Instrument Risk",order,1,1,0
+Y,P,44450,"Json Assay","Json Pan","Assay Risk",environment,1,1,0
+Y,S,1420,"Contamination of PPE and/or swab occurs during sample collection","Contamination of PPE","Instrument Risk",collection,0,0,0
+Y,S,19007,"Conical specimen tubes used","Improper specimen handling","Instrument Risk",operation,1,1,0
+Y,S,19008,"Specimens with < 150 uL are not loaded as priority to minimize evaporation","Specimen integrity","Instrument Risk",operation,1,1,0
+Y,S,19009,"Specimen on the ??Instrument?? for >3 hours","Specimen integrity","Instrument Risk",operation,1,1,0
+Y,S,19010,"Specimen ID (SID), rack ID or position number entered incorrectly","Mislabeled sample","Instrument Risk",operation,1,1,0
+Y,S,19011,"More than 10 tests ordered for a sample that is loaded in sample cups","Insufficient sample volume","Instrument Risk",operation,1,1,0
+Y,S,19012,"Test is ordered within a batch, disrupting the batch testing process","Delayed analysis of specimen","Instrument Risk",operation,1,1,0
+Y,S,19013,"Specimen or control with an exception or result flag is not investigated and, if possible, rerun","Insufficient troubleshooting","Instrument Risk",operation,1,1,0
+Y,S,19014,"Serum or plasma specimens not separated from clots, serum separators or red blood cells before freezing","Improper specimen storage","Instrument Risk","specimen storage",1,1,0
+Y,S,19015,"Specimen frozen and thawed multiple times","Improper specimen handling","Instrument Risk","specimen storage",1,1,0
+Y,S,19016,"Specimens are not recentrifuged if they require repeat testing","Improper specimen handling","Instrument Risk",processing,1,1,0
+Y,S,19017,"Specimens are not recentrifuged if they were frozen and thawed","Improper specimen handling","Instrument Risk",processing,1,1,0
+Y,S,19018,"Shipped specimens not removed from clot, red blood cells or separator gel","Improper specimen handling","Instrument Risk",processing,1,1,0
+Y,S,19019,"Specimens not shipped on wet or dry ice","Improper specimen handling","Instrument Risk",processing,1,1,0
+Y,S,19020,"Specimen used beyond sample stability permitted in the assay IFU","Sample storage","Instrument Risk","specimen storage",1,1,0
+Y,T,19021,"??Instrument?? not installed or relocated by manufacturer representative ","Instrument not properly configured","Instrument Risk",configuration,1,1,0
+Y,T,19022,"??Instrument?? hardware update not installed by manufacturer representative","Instrument not properly configured","Instrument Risk",configuration,1,1,0
+Y,T,19023,"??Instrument?? System software not installed by a manufacturer representative","Instrument not properly configured","Instrument Risk",configuration,1,1,0
+Y,T,19024,"??Instrument?? is located directly under HVAC air flow","Improper instrument installation","Instrument Risk",configuration,1,1,0
+Y,T,19025,"??Instrument?? is installed in close proximity to sources of strong eletromagnetic radiation","Improper instrument installation","Instrument Risk",configuration,1,1,0
+Y,T,19026,"??Instrument?? is installed in close proximity to sources of strong electromagnetic radiation","Improper instrument installation","Instrument Risk",configuration,1,1,0
+Y,T,19028,"System power is turned off","Improper operation of instrument","Instrument Risk",operation,1,1,0
+Y,T,19029,"Lab personnel attempt maintenance or repairs not specified by the manufacturer","Improper maintenance","Instrument Risk",maintenance,1,1,0
+Y,T,19030,"Bulk solutions are low or expired","Improper maintenance","Instrument Risk",maintenance,1,1,0
+Y,T,19031,"Liquid waste is full","Improper maintenance","Instrument Risk",maintenance,1,1,0
+Y,T,19032,"Consumables not stored in original containers, clean and dust-free","Improper maintenance","Instrument Risk",maintenance,1,1,0
+Y,T,19033,"Consumables are resused","Reuse of test components","Instrument Risk",operation,1,1,0
+Y,T,19034,"Consumables are low or empty","Improper maintenance","Instrument Risk",maintenance,1,1,0
+Y,T,19035,"Consumables waste is full","Improper maintenance","Instrument Risk",maintenance,1,1,0
+Y,T,19036,"Levey-Jennings rule violations are not reviewed and addressed.","Insufficient troubleshooting","Instrument Risk","quality control",1,1,0
+Y,T,19037,"Westgard rule violations are not reviewed and addressed","Insufficient troubleshooting","Instrument Risk","quality control",1,1,0
+Y,T,19038,"QC issues are not evaluated and resolved before specimens are tested","Insufficient troubleshooting","Instrument Risk","quality control",1,1,0
+Y,T,19039,"Use of reagents, calibrators, controls, bulk solutions or consumables from 3rd party vendors","Use of inappropriate reagents","Instrument Risk",operation,1,1,0
+Y,T,19040,"Foam or bubbles in liquid assay and instrument components","Air bubbles","Instrument Risk",operation,1,1,0
+Y,T,19041,"Diagnostic procedures not performed as recommended by manufacturer","Improper maintenance","Instrument Risk",operation,1,1,0
+Y,T,19042,"Components not replaced as recommended by manufacturer","Improper maintenance","Instrument Risk",maintenance,1,1,0
+Y,T,19043,"??Instrument?? message codes not reviewed and addressed","Insufficient troubleshooting","Instrument Risk","quality control",1,1,0
+Y,T,19044,"Observed problems not reviewed and addressed","Insufficient troubleshooting","Instrument Risk","quality control",1,1,0
+Y,R,19045,"Pre-Trigger Solutions is exposed to light","Reagent degradation","Instrument Risk",operation,1,1,0
+Y,R,19046,"Pre-Trigger Solution is left on the ??Instrument?? for more than 16 days","Reagent degradation","Instrument Risk",operation,1,1,0
+Y,R,19047,"Trigger Solutions is left on the ??Instrument?? longer than permitted by the reagents in the carousel","Reagent degradation","Instrument Risk",operation,1,1,0
+Y,R,19048,"Trigger Solution is left on the ??Instrument?? for more than 28 days","Reagent degradation","Instrument Risk",operation,1,1,0
+Y,R,19049,"Concentrated Wash Buffer is left on the ??Instrument?? for more than 30 days","Reagent degradation","Instrument Risk",operation,1,1,0
+Y,R,19050,"Probe conditioning solution not stored at 2-8° C","Reagent degradation","Instrument Risk",operation,1,1,0
+Y,S,19051,"Sample bar code label improperly placed","Mislabeled sample","Instrument Risk",operation,1,1,0
+Y,R,19052,"??LQC?? not available for all assays running on the ??Instrument??","Missed daily QC","Instrument Risk","quality control",1,1,0
+Y,R,19053,"??LQC?? left on the ??Instrument?? beyond the onboard stability for the analyte","Missed daily QC","Instrument Risk","quality control",1,1,0
+Y,R,19054,"Assays not calibrated when recommended (e.g. new reagent lot number, expired calibration, new assay file requires calibration, assay controls out of range)","Missed QC with each new lot","Instrument Risk","quality control",1,1,0
+Y,R,19055,"Calibration left on the ??Instrument?? beyond the onboard stability for the analyte","Improper calibration","Instrument Risk",calibration,1,1,0
+Y,R,19056,"Calibration not available for all assays running on the ??Instrument??","Improper calibration","Instrument Risk",calibration,1,1,0
+Y,R,19057,"Use of expired reagent pack(s)","Reagent degradation","Instrument Risk",calibration,1,1,0
+Y,R,19058,"Reagent pack left on the ??Instrument?? beyond the onboard stability for that reagent","Reagent degradation","Instrument Risk",operation,1,1,0
+Y,R,19059,"Reagent pack is used after being inverted","Reagent degradation","Instrument Risk",operation,1,1,0
+Y,R,19060,"Reagent is left on the ??Instrument?? longer than permitted by the IFU","Reagent degradation","Instrument Risk",operation,1,1,0
+Y,R,19061,"Reagents, calibrators, controls or bulk solutions mixed within or between lots","Reagent degradation","Instrument Risk",operation,1,1,0
+Y,R,19062,"??Instrument?? reagent septums not used","Reagent degradation","Instrument Risk",operation,1,1,0
+Y,R,19063,"Upon receipt, the unopened ??reagent?? is not inverted to ensure that reagent covers all sides of the bottles within the cartridge","Reagent degradation","Instrument Risk",operation,1,1,0
+Y,R,19064,"After ??reagent?? mixing, reagent is not placed upright for one hour before use to allow bubbles to dissipate","Air bubbles","Instrument Risk",operation,1,1,0
+Y,R,19065,"If dropped, ??reagent?? is not placed upright for one hour before use to allow bubbles to dissipate","Air bubbles","Instrument Risk",operation,1,1,0
+Y,R,19066,"When handling ??reagent?? ??test personnel?? do not change gloves that have been in contact with human serum or plasma","Contamination of gloves with serum/plasma","Instrument Risk",operation,1,1,0
+Y,R,19068,"??Reagent?? is not inspected prior to use to ensure that there are no signs of leakage","Consumable leakage","Instrument Risk",operation,1,1,0
+Y,S,19069,"Sample manual pretreatment steps are not followed precisely","Improper specimen handling","Assay Risk",processing,1,0,0
+Y,S,19070,"Use of positive displacement pipettes","Improper specimen handling","Assay Risk",processing,1,0,0
+Y,S,19071,"Use of pre-wetting or reverse pipetting techniques","Improper specimen handling","Assay Risk",processing,1,1,0
+Y,S,19072,">3 Cyclosporine replicates ordered from the same Transplant Pretreatment tube","Delayed sample analysis","Assay Risk",processing,0,1,0
+Y,S,19073,">4 Tacrolimus replicates ordered from the same Transplant Pretreatment tube","Delayed sample analysis","Assay Risk",processing,0,1,0
+Y,S,19074,"Tubes other than the Transplant Pretreatment Tubes are used for the pretreated samples","Incompatible consumable","Assay Risk",processing,1,0,0
+Y,S,19075,"Tacrolimus samples, controls and calibrators not tested within 30 minutes of decanting","Delayed sample analysis","Assay Risk",processing,0,1,0
+Y,S,19076,"> 24 Tacrolimus samples loaded on the ??Instrument?? at one time","Delayed sample analysis","Assay Risk",processing,0,1,0
+Y,S,19077,"Tacrolimus samples not priority ordered","Delayed sample analysis","Assay Risk",processing,0,1,0
+Y,S,19078,"Dilution procedure performed on pretreated specimen instead of whole blood specimen","Improper specimen handling","Assay Risk",processing,1,0,0
+Y,S,1010,"Test is performed without an order","No order","Instrument Risk",order,1,0,0
+Y,S,1390,"Specimens are not freshly collected","Fresh samples","Instrument Risk",collection,0,0,0
+Y,S,3045,"Room temperature nasopharyngeal swab, nasal swab, and nasal wash/aspirate specimens stored in viral transport media or saline are tested outside of the timeframe for sample collection as specified in IFU","Testing expired RT stored samples","Instrument Risk",handling,1,0,0
+Y,R,7568,"[Risk test Inogre]   twotwo",twoooo,"Instrument Risk",operation,0,1,0
+Y,R,7569,"[Risk test Inogre]   3050 - ??Consumable?? is stored improperly"," is stored improperly","Instrument Risk",operation,0,1,0
+Y,S,50000,"Hazard/RISK Statement","Risk Abbreviated Terms","Instrument Risk",Activity,1,1,0
+Y,E,50004,"test Validation","Test Validation","Instrument Risk",,1,1,0
+Y,E,50006,"Purna Rai & Dajubhaiharu - Sparsha Sangeet","Purna Rai & Dajubhaiharu - Sparsha Sangeet","Instrument Risk",distraction,1,1,0
+Y,E,50007,"Pahilo Jhalak @123","Pahilo Jhalak @123 ##","Instrument Risk",,0,0,0
+Y,E,50009,"Test Risk Statement 928 - Edited","Test Abbreviated Terms 928 - Edited","Instrument Risk",,1,1,0
+Y,E,50013,Risk_1,Risk_1,"Instrument Risk",order,1,1,0
+Y,P,50014,Risk_2,Risk_2,"Assay Risk",collection,1,1,0
+Y,R,50015,Risk_3,Risk_3,"Assay Risk",implementation,1,1,0
+Y,S,50016,Risk_4,Risk_4,"Instrument Risk",environment,1,1,0
+Y,T,50017,Risk_5,Risk_5,"Assay Risk","human factors",1,1,0
+Y,E,50018,"Cat E","Cat E","Instrument Risk","patient id",1,1,0
+Y,E,50019,"Risk Statement(New)",Abbreviated(New),"Instrument Risk",,1,1,0
+Y,E,50021,Shraddha(Risk),Shraddha(Risk),"Instrument Risk",,1,1,0
+Y,E,50023,"Test Risk Statement 684","Test Abbreviated Terms 684","Instrument Risk",,1,1,0
+Y,E,50024,"Test Risk Statement 806","Test Abbreviated Terms 806","Instrument Risk",,1,1,0
+Y,E,50025,"Test Risk Statement 808","Test Abbreviated Terms 808","Instrument Risk",,1,1,0
+Y,E,50026,"Test Risk Statement 281","Test Abbreviated Terms 281","Instrument Risk",,1,1,0
+Y,E,50027,"Test Risk Statement 850","Test Abbreviated Terms 850","Instrument Risk",,1,1,0
+Y,E,50028,"Test Risk Statement 191","Test Abbreviated Terms 191","Instrument Risk",,1,1,0
+Y,E,50029,"Test Risk Statement 605","Test Abbreviated Terms 605","Instrument Risk",,1,1,0
+Y,E,50030,"Test Risk Statement 247","Test Abbreviated Terms 247","Instrument Risk",,1,1,0
+Y,E,50031,"Test Risk Statement 671","Test Abbreviated Terms 671","Instrument Risk",,1,1,0
+Y,E,50032,"Test Risk Statement 222","Test Abbreviated Terms 222","Instrument Risk",,1,1,0
+Y,E,50034,"Test Risk Statement 535","Test Abbreviated Terms 535","Instrument Risk",,1,1,0
+Y,E,50035,"Test Risk Statement 113","Test Abbreviated Terms 113","Instrument Risk",,1,1,0
+Y,E,50036,"Test Risk Statement 461","Test Abbreviated Terms 461","Instrument Risk",,1,1,0
+Y,E,50037,"Test Risk Statement 434","Test Abbreviated Terms 434","Instrument Risk",,1,1,0
+Y,E,50038,"Test Risk Statement 380","Test Abbreviated Terms 380","Instrument Risk",,1,1,0
+Y,E,50039,"Test Risk Statement 618","Test Abbreviated Terms 618","Instrument Risk",,1,1,0
+Y,E,50040,"Test Risk Statement 242","Test Abbreviated Terms 242","Instrument Risk",,1,1,0
+Y,E,50041,"Test Risk Statement 713","Test Abbreviated Terms 713","Instrument Risk",,1,1,0
+Y,E,50042,"Test Risk Statement 269","Test Abbreviated Terms 269","Instrument Risk",,1,1,0
+Y,E,50043,"Test Risk Statement 848","Test Abbreviated Terms 848","Instrument Risk",,1,1,0
+Y,E,50044,"Test Risk Statement 785","Test Abbreviated Terms 785","Instrument Risk",,1,1,0
+Y,E,50045,"Test Risk Statement 692","Test Abbreviated Terms 692","Instrument Risk",,1,1,0
+Y,,50046,"Test Risk Statement 371",,,,1,1,0
+Y,E,50047,"Test Risk Statement 980","Test Abbreviated Terms 980","Instrument Risk",,1,1,0
+Y,E,50048,"Test Risk Statement 250","Test Abbreviated Terms 250","Instrument Risk",,1,1,0
+Y,E,50049,"Test Risk Statement 715","Test Abbreviated Terms 715","Instrument Risk",,1,1,0
+Y,E,50050,"Test Risk Statement 292","Test Abbreviated Terms 292","Instrument Risk",,1,1,0
+Y,E,50051,"Test Risk Statement 105","Test Abbreviated Terms 105","Instrument Risk",,1,1,0
+Y,E,50052,"Test Risk Statement 429","Test Abbreviated Terms 429","Instrument Risk",,1,1,0
+Y,E,50053,"Test Risk Statement 201","Test Abbreviated Terms 201","Instrument Risk",,1,1,0
+Y,E,50054,"Test Risk Statement 546","Test Abbreviated Terms 546","Instrument Risk",,1,1,0
+Y,E,50055,"Acc Test","Acc Test","Instrument Risk","quality control",1,1,0
+Y,E,50056,"Test Risk Statement 440 All","Test Abbreviated Terms 440 All","Instrument Risk",collection,1,1,0
+Y,E,50057,"Test Risk Statement 998 All","Test Abbreviated Terms 998 All","Instrument Risk",collection,1,1,0
+Y,E,50058,"Test Risk Statement 456 All","Test Abbreviated Terms 456 All","Instrument Risk",collection,1,1,0
+Y,E,50059,"Test Risk Statement 555 All","Test Abbreviated Terms 555 All","Instrument Risk",collection,1,1,0
+Y,E,50060,"Test Risk Statement 943 All","Test Abbreviated Terms 943 All","Instrument Risk",collection,1,1,0
+Y,E,50061,"Test Risk Statement 295 - Edited","Test Abbreviated Terms 295 - Edited","Instrument Risk",,1,1,0
