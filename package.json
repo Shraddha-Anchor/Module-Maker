@@ -13,7 +13,8 @@
   "type": "commonjs",
   "dependencies": {
     "adm-zip": "^0.5.16",
-    "cypress": "^15.1.0"
+    "cypress": "^15.1.0",
+    "decompress": "^4.2.1"
   },
   "devDependencies": {
     "cypress-file-upload": "^5.0.8",

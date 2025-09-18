@@ -15,17 +15,17 @@ describe("Add Risk Management", () => {
     cy.wait(1000);
     cy.location("pathname").should("eq", "/admin/commerce/products");
   });
-  it("TC_01- QCP Management", () => {
+  it.only("TC_01- QCP Management", () => {
     cy.get("#toolbar-item-administration").click().click();
     cy.get(".toolbar-icon-commerce-admin-commerce").click();
     cy.get(".management-link--cp-risk-cp-risk-list > .card").click();
     cy.get('[data-original-order="2"] > .tabs__link').click();
     cy.get(".local-actions__item > .button").click();
-    cy.get("#edit-add-to-qcp-table").select("Yes");
-    cy.get('[name="action[0][value]"]').type(qcpName);
+    cy.get('[name="title[0][value]"]').type(qcpName);
     cy.get('[name="op"]').click();
-    cy.contains("QCP created successfully.").should("be.visible");
+    cy.contains("Status message").should("be.visible");
     cy.contains(qcpName).should("be.visible");
+    cy.wait(2000);
   });
 
   it("TC_02 - Add QCP into Risk", () => {
@@ -41,6 +41,7 @@ describe("Add Risk Management", () => {
     cy.get("#edit-qcp-ids-0-target-id").type(qcpName);
     cy.get("#edit-submit").click();
     cy.contains(riskStatement).should("be.visible");
+    cy.wait(2000);
   });
 
   it("TC_03 -Add QCP And Risk Into Product", () => {

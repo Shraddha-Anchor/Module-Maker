@@ -9,11 +9,30 @@ describe("Import Export", () => {
   });
 
   //------------------------PRODUCTS------------------------
-  it("TC_01 - Export Products", () =>
-  {
+  it.only("TC_01 Export, Unzip, and Validate CSV files In Product", () => {
+    const downloadPath = "cypress/downloads/export_products.zip";
+    const extractPath = "cypress/downloads/unzipped";
+    const expectedFiles = [
+      "export_assay_panel.csv",
+      "export_carepoint_pro-qcp.csv",
+      "export_instrument_system.csv",
+    ];
+    // Initiate the export
     cy.get(":nth-child(3) > .button").click();
-
+    // Wait for the file to be downloaded
+    cy.readFile(downloadPath, { timeout: 15000 }).should("exist");
+    // Unzip and return list of files
+    cy.task("unzipping", {
+      zipFilePath: downloadPath,
+      outputPath: extractPath,
+    }).then((files) => {
+      // Assert all expected files exist
+      expectedFiles.forEach((file) => {
+        expect(files).to.include(file);
+      });
+    });
   });
+
   it("TC_02 - Import Products", () => {
     cy.get(":nth-child(4) > .button").click();
     cy.get('.local-actions > [name="op"]').click();

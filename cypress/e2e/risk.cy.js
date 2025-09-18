@@ -25,6 +25,7 @@ describe("Risk Management", () => {
     cy.get("#edit-type-of-risk").select("Instrument Risk");
     cy.get("#edit-submit").click();
     cy.contains(riskStatement).should("be.visible");
+        cy.wait(2000);
   });
   it("TC_02 - Edit Recently Created Risk", () => {
     goToRiskList();
@@ -42,6 +43,7 @@ describe("Risk Management", () => {
       .type(`${riskTerms} - Edited`);
     cy.get("#edit-submit").click();
     cy.contains(`${riskStatement} - Edited`).should("be.visible");
+        cy.wait(2000);
   });
   it("TC_03 - View Recently Edited Risk", () => {
     goToRiskList();
@@ -51,6 +53,7 @@ describe("Risk Management", () => {
     cy.get("#edit-submit-cp-risk-admin").click();
     cy.get(".edit > a").click();
     cy.get('[data-original-order="0"] > .tabs__link').click();
+        cy.wait(2000);
   });
   it("TC_04 - Delete Recently Edited Risk", () => {
     goToRiskList();
@@ -61,6 +64,7 @@ describe("Risk Management", () => {
     cy.get(".edit > a").click();
     cy.get("#edit-delete").click();
     cy.contains("button", "Delete").click();
+        cy.wait(2000);
   });
   it("TC_05 - Create Risk with All Fields", () => {
     goToRiskList();
@@ -79,5 +83,6 @@ describe("Risk Management", () => {
     cy.get(".ui-menu-item-wrapper").contains("QCP").click();
     cy.get('[name="op"]').click();
     cy.contains(riskStatement).should("be.visible");
+        cy.wait(2000);
   });
 });

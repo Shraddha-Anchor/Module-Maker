@@ -21,6 +21,7 @@ describe("ModuleMaker Login Tests", () => {
     cy.get("#toolbar-item-user").click();
     cy.contains("a", "Log out").click();
     cy.location("pathname").should("eq", "/user/login");
+    cy.wait(2000);
   });
 
   it("TC_02 - Invalid Login", () => {
@@ -35,6 +36,7 @@ describe("ModuleMaker Login Tests", () => {
       "Unrecognized username or password"
     );
     cy.url().should("include", "/user/login");
+    cy.wait(2000);
   });
 
   it("TC_03 - Blank Login", () => {
@@ -42,6 +44,7 @@ describe("ModuleMaker Login Tests", () => {
     cy.wait(1000);
     cy.get(`${selectors.email}:invalid`).should("exist");
     cy.get(`${selectors.password}:invalid`).should("exist");
+    cy.wait(2000);
   });
 
   it("TC_04 - Valid Username and Blank Password", () => {
@@ -49,6 +52,7 @@ describe("ModuleMaker Login Tests", () => {
     cy.get(selectors.submit).click();
     cy.wait(1000);
     cy.get(`${selectors.password}:invalid`).should("exist");
+    cy.wait(2000);
   });
 
   it("TC_05 - Blank Username and Valid Password", () => {
@@ -56,12 +60,14 @@ describe("ModuleMaker Login Tests", () => {
     cy.get(selectors.submit).click();
     cy.wait(1000);
     cy.get(`${selectors.email}:invalid`).should("exist");
+    cy.wait(2000);
   });
 
   it("TC_06 - Capital Username and Valid Password", () => {
     cy.login("Shraddha.regmi", "Shraddha@123");
     cy.wait(1000);
     cy.get(`${selectors.email}:invalid`).should("exist");
+    cy.wait(2000);
   });
 
   it("TC_07 - Remember me", () => {
@@ -74,11 +80,13 @@ describe("ModuleMaker Login Tests", () => {
     cy.get(".logout > a").click();
     cy.wait(1000);
     cy.get(selectors.username).should("have.value", "shraddha.regmi");
+    cy.wait(2000);
   });
   it("TC_08 - Forgot Password", () => {
     cy.get(".reset_text > .switcher-text").click();
     cy.location("pathname").should("eq", "/user/password");
     cy.wait(1000);
     cy.get("h1").should("have.text", "Module Maker Reset your password");
+    cy.wait(2000);
   });
 });

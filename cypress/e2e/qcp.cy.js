@@ -21,6 +21,7 @@ describe("QCP Management", () => {
     cy.get('[name="op"]').click();
     cy.contains("QCP created successfully.").should("be.visible");
     cy.contains(qcpName).should("be.visible");
+        cy.wait(2000);
   });
 
   it("TC_02 - Edit QCP", () => {
@@ -30,6 +31,7 @@ describe("QCP Management", () => {
     cy.get("#edit-action-0-value").clear().type(updatedName);
     cy.get('[name="op"]').click();
     cy.contains(updatedName).should("be.visible");
+        cy.wait(2000);
   });
 
   it("TC_03 - View QCP", () => {
@@ -37,6 +39,7 @@ describe("QCP Management", () => {
     cy.get(`a[aria-label*="${qcpName}"]`).should("be.visible").click();
     cy.get(".page-title").should("contain.text", qcpName);
     cy.get('[data-original-order="0"] > .tabs__link').click();
+        cy.wait(2000);
   });
 
   it("TC_04 - Delete QCP", () => {
@@ -45,6 +48,7 @@ describe("QCP Management", () => {
     cy.get("#edit-delete").click();
     cy.get('button[type="button"]').contains("Delete").click();
     cy.get(".messages__header").should("be.visible");
+        cy.wait(2000);
   });
   it("TC_05 - Create QCP (All Field)", () => {
     goToQCPList();
@@ -63,5 +67,6 @@ describe("QCP Management", () => {
     cy.get('[name="op"]').click();
     cy.contains("QCP created successfully.").should("be.visible");
     cy.contains(qcpName).should("be.visible");
+        cy.wait(2000);
   });
 });

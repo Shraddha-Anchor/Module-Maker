@@ -36,7 +36,7 @@ describe("Product Management", () => {
   beforeEach(() => {
     cy.loginSession();
     cy.visit("/admin/commerce/products");
-     cy.wait(1000);
+    cy.wait(1000);
     cy.location("pathname").should("eq", "/admin/commerce/products");
   });
 
@@ -76,6 +76,7 @@ describe("Product Management", () => {
     cy.get("#edit-actions-submit").click();
 
     cy.contains(editedProductName).should("be.visible");
+    cy.wait(2000);
   });
 
   it("TC_03 - Delete Product", () => {
@@ -87,6 +88,7 @@ describe("Product Management", () => {
     cy.contains(`The product ${editedProductName} has been deleted.`).should(
       "be.visible"
     );
+    cy.wait(2000);
   });
 
   it("TC_04 - Add Variation", () => {
@@ -109,6 +111,7 @@ describe("Product Management", () => {
 
     cy.get("#edit-actions-submit-continue").click();
     addVariation(`Variation ${productNum}`, `SKU-${productNum}`);
+    cy.wait(2000);
   });
   it("TC_05 - Create Product ALL Field (Assay Panel)", () => {
     cy.get(":nth-child(1) > .button").click();
@@ -157,6 +160,7 @@ describe("Product Management", () => {
 
     cy.get("#edit-actions-submit").click();
     cy.location("pathname").should("eq", "/admin/commerce/products");
+    cy.wait(2000);
   });
 
   // // ---------------- Instrument ----------------
@@ -174,6 +178,7 @@ describe("Product Management", () => {
 
     cy.get("#edit-actions-submit").click();
     cy.location("pathname").should("eq", "/admin/commerce/products");
+    cy.wait(2000);
   });
 
   it("TC_07 - Add Variation to Existing Product (Instrument)", () => {
@@ -183,12 +188,14 @@ describe("Product Management", () => {
     cy.get('[data-original-order="2"] > .tabs__link').click();
 
     addVariation(`Instrument VAR ${productNum}`, `SKU-INS${productNum}`);
+    cy.wait(2000);
   });
 
   it("TC_08 - Delete Product (Instrument)", () => {
     searchAndEdit(productName + " Ins");
     cy.get("#edit-actions-delete").click();
     cy.get(".ui-dialog-buttonset > .button--primary").click();
+    cy.wait(2000);
   });
   it("TC_09 - Create Product (Instrument Variation)", () => {
     cy.get(":nth-child(1) > .button").click();
@@ -205,6 +212,7 @@ describe("Product Management", () => {
     cy.get("#edit-actions-submit-continue").click();
     addVariation(`Instrument ${productNum}`, `SKU-INS-${productNum}`);
     cy.location("pathname").should("contain", "/product/");
+    cy.wait(2000);
   });
   it("TC_10 - Create Product All Field (Instrument)", () => {
     cy.get(":nth-child(1) > .button").click();
@@ -243,6 +251,7 @@ describe("Product Management", () => {
 
     cy.get("#edit-actions-submit").click();
     cy.location("pathname").should("eq", "/admin/commerce/products");
+    cy.wait(2000);
   });
 
   // ---------------- PRO-QCP ----------------
@@ -260,6 +269,7 @@ describe("Product Management", () => {
 
     cy.get("#edit-actions-submit").click();
     cy.location("pathname").should("eq", "/admin/commerce/products");
+    cy.wait(2000);
   });
 
   it("TC_12 - Add Variation to Existing Product (PRO-QCP)", () => {
@@ -269,12 +279,14 @@ describe("Product Management", () => {
     cy.get('[data-original-order="2"] > .tabs__link').click();
 
     addVariation(`QCP VAR ${productNum}`, `SKU-QCP${productNum}`);
+    cy.wait(2000);
   });
 
   it("TC_13 - Delete Product (QCP)", () => {
     searchAndEdit(productName + " QCP");
     cy.get("#edit-actions-delete").click();
     cy.get(".ui-dialog-buttonset > .button--primary").click();
+    cy.wait(2000);
   });
 
   it("TC_14 - Create Product (QCP Variation)", () => {
@@ -291,6 +303,7 @@ describe("Product Management", () => {
 
     cy.get("#edit-actions-submit-continue").click();
     addVariation(`QCP ${productNum}`, `SKU-QCP-${productNum}`);
+    cy.wait(2000);
   });
   it("TC_15 - Create Product All Field (PRO-QCP)", () => {
     cy.get(":nth-child(1) > .button").click();
@@ -325,5 +338,6 @@ describe("Product Management", () => {
     cy.get('[name="field_lqc[0][value]"]').type("LQC");
     cy.get("#edit-actions-submit").click();
     cy.location("pathname").should("eq", "/admin/commerce/products");
+    cy.wait(2000);
   });
 });
